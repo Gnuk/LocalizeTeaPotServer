@@ -1,0 +1,7 @@
+<div id="infos">
+<h1>Salut mon pote, comment &ccedil;a va <%= @utilisateur.pseudo != "" ? @utilisateur.pseudo : "#{@utilisateur.firstName} #{@utilisateur.lastName}" %>?</h1>
+<p>
+	Vous &ecirc;tes <%= @utilisateur.gender == true ? "un homme" : "une femme" %>.<br/>
+	<%= @utilisateur.email != "" ? "#{@utilisateur.email}<br/>" : "" %>
+</p>
+</div>

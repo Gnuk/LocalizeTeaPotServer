@@ -1,0 +1,27 @@
+#formulaire, #infos
+{
+	width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	border-style:ridge;
+	text-align:center;
+	background-color:#ffeebb;
+}
+#titre
+{
+	width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom:30px;
+	text-align:center;
+	border-style:ridge;
+	background-color:#ffeebb;
+}
+body
+{
+	background-color:#eeffbb;
+}
+form
+{
+	padding:10px;
+}

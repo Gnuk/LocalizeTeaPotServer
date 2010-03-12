@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  friend: 
+  wait: false
+  validation: false
+
+two:
+  user: 
+  friend: 
+  wait: false
+  validation: false

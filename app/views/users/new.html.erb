@@ -1,0 +1,20 @@
+<div id="formulaire">
+<% form_for @user do |f| %>
+    <%= f.label :pseudo, 'Pseudo' %>:
+    <%= f.text_field :pseudo %><br />
+    <%= f.label :lastName, 'Nom' %>:
+    <%= f.text_field :lastName %><br />
+    <%= f.label :firstName, 'pr&eacute;nom' %>:
+    <%= f.text_field :firstName %><br />
+    <%= f.label :password, 'Mot de passe' %>:
+    <%= f.password_field :password %><br />
+    <%= f.label :email, 'Email' %>:
+    <%= f.text_field :email %><br />
+    <%= f.label :birthday, 'Votre date de naissance' %>:
+    <%= f.text_field :birthday %><br />
+    <%= f.label :gender, 'Votre sexe' %>:
+    <%= f.radio_button("gender", "true", :checked => true) %>homme
+    <%= f.radio_button("gender", "false") %>femme<br />
+	<%= f.submit "Envoyer" %>
+<% end %>
+</div>
