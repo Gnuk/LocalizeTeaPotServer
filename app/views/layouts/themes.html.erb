@@ -9,18 +9,18 @@
       <div id='header'>
 
         <div id='logo'>
-          <%= link_to image_tag('logo.png', :border => 0, :alt => SITE_CONFIG[:app_name]) %>
+          <%= link_to image_tag('logo.png', :border => 0, :height => 80, :alt => SITE_CONFIG[:app_name]), root_path %>
         </div>
         
         <ul id='navigation'>
-          <li><%= link_to "Home" %></li>
+          <li><%= link_to "Home", root_path %></li>
           
-          <% if session[:user_id].blank? %>
-            <li><%= link_to "Log in" %></li>
-            <li><%= link_to "Contact us" %></li>
-
+          <% if current_user == nil || current_user.logged_in? == false %>
+            <li><%= link_to "Log in", new_session_path %></li>
+            <li><%= link_to "Contact us", "mailto:sbooob@gmail.com" %></li>
+            
           <% else %>
-            <li><%= link_to "Log out <span class=\"small\">(username)</span>" %></li>
+            <li><%= link_to "Log out <span class=\"small\">(#{current_user.login})</span>", destroy_session_path %></li>
           
           <% end %>
         </ul>
