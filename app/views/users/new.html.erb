@@ -1,5 +1,6 @@
-<h1>Register</h1>
- 
+<% title("Create An Account") %>
+<% subtitle("Here you can register an new account.") %>
+
 <% form_for @user, :url => user_path do |f| %>
   <%= f.error_messages %>
   <%= render :partial => "form", :object => f %>
