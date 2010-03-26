@@ -20,6 +20,7 @@
             <li><%= link_to "Contact us", "mailto:sbooob@gmail.com" %></li>
             
           <% else %>
+          	<li><%= link_to "My friends",  %></li>
             <li><%= link_to "Log out <span class=\"small\">(#{current_user.login})</span>", destroy_session_path %></li>
           
           <% end %>
