@@ -1,40 +1,19 @@
-<% title("Profile Sumarry") %>
-<% subtitle("Here you'll find various details about your profile.") %> 
+<% title("About a friendship") %>
+<% subtitle("Here you will find some details about a friendship.") %>
+<% 
+	friend = User.find(@friendship.friend_id)
+	if friend.gender
+		gender = "F"
+	else
+		gender = "M"
+	end
+%>
 
-<p>
-  <b>Login:</b>
-  <%=h @user.login %>
-</p>
- 
-<p>
-  <b>Login count:</b>
-  <%=h @user.login_count %>
-</p>
- 
-<p>
-  <b>Last request at:</b>
-  <%=h @user.last_request_at %>
-</p>
- 
-<p>
-  <b>Last login at:</b>
-  <%=h @user.last_login_at %>
-</p>
- 
-<p>
-  <b>Current login at:</b>
-  <%=h @user.current_login_at %>
-</p>
- 
-<p>
-  <b>Last login ip:</b>
-  <%=h @user.last_login_ip %>
-</p>
- 
-<p>
-  <b>Current login ip:</b>
-  <%=h @user.current_login_ip %>
-</p>
- 
- 
-<%= link_to 'Edit', edit_user_path %>
+<h3><%= friend.login %></h3>
+<span><%= friend.first_name %> <%= friend.last_name %> (<%= friend.email %>)</span>
+<br />
+<span>Gender: <%= gender %></span>
+<br />
+<span>Birthday: <%= friend.birthday %></span>
+<br />
+<span>Established <%= time_ago_in_words(friend.created_at) %></span> ago.
