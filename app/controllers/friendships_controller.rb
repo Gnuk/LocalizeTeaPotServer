@@ -1,10 +1,18 @@
 class FriendshipsController < ApplicationController
-  before_filter :require_user, :only => [:create, :new]
+  before_filter :require_user
   def index
-  
+  	@friendships = Friendship.find_all_by_user_id(current_user.id)
+  	
+  	respond_to do |format|
+  		format.html
+  	end
   end
   def show
-  
+  	@friendship = Friendship.find(params[:id])
+  	
+  	respond_to do |format|
+  		format.html
+  	end
   end
   def new
     @friendship = Friendship.new
@@ -17,7 +25,7 @@ class FriendshipsController < ApplicationController
        @friendship = Friendship.new(params[:friendship])
        if @friendship.save
          flash[:notice] = "Friendship initiated!"
-         redirect_back_or_default friendship_url
+         redirect_back_or_default friendships_url
        else
          render :action => :new
        end

@@ -1,7 +1,7 @@
 <% title("Create An friendship") %>
 <% subtitle("Here you can initiate a new friendship.") %>
 
-<% form_for @friendship, :url => friendship_path do |f| %>
+<% form_for @friendship, :url => friendships_path do |f| %>
   <%= f.error_messages %>
   <%= render :partial => "form", :object => f %>
   <%= f.submit "Register" %>

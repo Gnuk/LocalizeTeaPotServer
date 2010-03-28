@@ -44,7 +44,7 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "users", :action => 'new'
   
   map.resource :user, :controller => "users"
-  map.resource :friendship, :controller => "friendships"
+  map.resources :friendships
   map.my_friendships '/myfriendships', :controller => :friendships, :action => 'index'
   map.resource :session, :controller => "user_sessions"
   map.destroy_session '/session/destroy', :controller => 'user_sessions', :action => 'destroy'
