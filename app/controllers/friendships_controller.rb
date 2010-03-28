@@ -1,5 +1,6 @@
 class FriendshipsController < ApplicationController
   before_filter :require_user
+
   def index
   	@friendships = Friendship.find_all_by_user_id(current_user.id)
   	
@@ -7,13 +8,19 @@ class FriendshipsController < ApplicationController
   		format.html
   	end
   end
+  
   def show
   	@friendship = Friendship.find(params[:id])
-  	
-  	respond_to do |format|
-  		format.html
-  	end
+  	if @friendship.user_id != current_user.id
+  		flash[:notice] = "Sorry, you can only check your friends' profiles!"
+  		redirect_back_or_default friendships_url
+  	else
+	  	respond_to do |format|
+	  		format.html
+	  	end
+	end
   end
+  
   def new
     @friendship = Friendship.new
   end
@@ -35,12 +42,15 @@ class FriendshipsController < ApplicationController
       render :action => :new
      end
   end
+  
   def edit
   
   end
+  
   def update
   
   end
+  
   def destroy
   
   end
