@@ -1,4 +1,4 @@
 <% div_for friendship do %>
-    <h3><%= link_to(User.find(friendship.friend_id).login, friendship) %></h3>
+    <h3><%= link_to(User.find(friendship.friend_id).login, friendship_path(current_user.id, friendship.id)) %></h3>
     <span>Established <%= time_ago_in_words(friendship.created_at) %> ago</span>
 <% end %>

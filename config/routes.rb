@@ -43,9 +43,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.root :controller => :user_sessions, :action => :new
   
-  map.resources :users
-  map.resources :friendships, :collection => { :search => :get } 
-  map.my_friendships '/myfriendships', :controller => :friendships, :action => :index
+  map.resources :users, :has_many => :friendships
+  map.resources :friendships, :collection => { :search => :get }, :path_prefix => 'users/:user_id'
   map.resource :session, :controller => :user_sessions, :collection => { :destroy => :get }
   
   #map.connect ':controller/:action/:id'

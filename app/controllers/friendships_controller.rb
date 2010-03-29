@@ -52,7 +52,10 @@ class FriendshipsController < ApplicationController
   end
   
   def destroy
-  
+  	@friendship = Friendship.find(params[:id])
+  	@friendship.destroy
+  	
+  	redirect_to(friendships_url)
   end
   
   def search
