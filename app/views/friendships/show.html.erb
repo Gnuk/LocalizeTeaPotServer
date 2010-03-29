@@ -1,0 +1,19 @@
+<% title("About a friendship") %>
+<% subtitle("Here you will find some details about a friendship.") %>
+<% 
+	friend = User.find(@friendship.friend_id)
+	if friend.gender
+		gender = "F"
+	else
+		gender = "M"
+	end
+%>
+
+<h3><%= friend.login %></h3>
+<span><%= friend.first_name %> <%= friend.last_name %> (<%= friend.email %>)</span>
+<br />
+<span>Gender: <%= gender %></span>
+<br />
+<span>Birthday: <%= friend.birthday %></span>
+<br />
+<span>Established <%= time_ago_in_words(friend.created_at) %></span> ago.

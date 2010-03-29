@@ -1,0 +1,5 @@
+<% title("Friends list") %>
+<% subtitle("Here you'll find a list of your friends.") %>
+<%= render :partial => @friendships %>
+<br />
+<%= link_to("Add a new friend", new_friendship_path) %>
