@@ -1,0 +1,6 @@
+<% title("Show status") %>
+<% subtitle("") %>
+<%=h @statut.message %><br/>
+[<%=h @statut.latitude %> | <%=h @statut.longitude %>]<br/><br/>
+<%= link_to 'Edit', edit_statut_path(@statut) %> |
+<%= link_to 'Back', statuts_path %>
