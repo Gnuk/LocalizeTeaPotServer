@@ -907,3 +907,10 @@ hr.space {
 	color:#264409;
 	border-color:#c6d880;
 }
+hr {
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+input[type=submit] {
+	margin-top: 2em;
+}

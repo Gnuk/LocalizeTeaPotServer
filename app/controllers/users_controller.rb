@@ -33,4 +33,10 @@ class UsersController < ApplicationController
       render :action => :edit
     end
   end
+  
+  def search
+  	@search = User.search(params[:search])
+	@users, @users_count = @search.all, @search.count
+  end
+
 end
