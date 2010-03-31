@@ -9,12 +9,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100326120848) do
+ActiveRecord::Schema.define(:version => 20100331221422) do
 
   create_table "friendships", :force => true do |t|
     t.integer  "user_id"
     t.integer  "friend_id"
     t.boolean  "see_position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "statuts", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "message"
+    t.string   "latitude"
+    t.string   "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

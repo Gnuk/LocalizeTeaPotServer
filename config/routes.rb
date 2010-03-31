@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :statuts
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -41,13 +43,11 @@ ActionController::Routing::Routes.draw do |map|
   #map.connect ':controller/:action/:id'
   #map.connect ':controller/:action/:id.:format'
   
-  map.root :controller => "users", :action => 'new'
+  map.root :controller => :user_sessions, :action => :new
   
-  map.resource :user, :controller => "users"
-  map.resources :friendships
-  map.my_friendships '/myfriendships', :controller => :friendships, :action => 'index'
-  map.resource :session, :controller => "user_sessions"
-  map.destroy_session '/session/destroy', :controller => 'user_sessions', :action => 'destroy'
+  map.resources :users, :has_many => :friendships, :collection => { :search => :get }
+  #map.resources :friendships, :collection => { :search => :get }, :path_prefix => 'users/:user_id'
+  map.resource :session, :controller => :user_sessions, :collection => { :destroy => :get }
   
   #map.connect ':controller/:action/:id'
   #map.connect ':controller/:action/:id.:format'

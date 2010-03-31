@@ -1,8 +1,25 @@
 <% title("Create An friendship") %>
 <% subtitle("Here you can initiate a new friendship.") %>
 
-<% form_for @friendship, :url => friendships_path do |f| %>
+<h3>You know your friend's nickname</h3>
+<% form_for @friendship, :url => user_friendships_path do |f| %>
   <%= f.error_messages %>
   <%= render :partial => "form", :object => f %>
-  <%= f.submit "Register" %>
+  <%= f.submit "Add a friend" %>
+<% end %>
+<hr />
+<h3>Find a friend</h3>
+<% form_for :search, @search, :url => {:controller => 'users', :action => 'search'} do |f| %>
+    <fieldset>
+        <legend>Search Users</legend>
+		<%= f.label :first_name_like, "First Name" %><br />
+        <%= f.text_field :first_name_like %><br />
+        <%= f.label :last_name_like, "Last Name" %><br />
+        <%= f.text_field :last_name_like %><br />
+		<%= f.label :login_like, "Login" %><br />
+        <%= f.text_field :login_like %><br />
+		<%= f.label :email_like, "E-mail" %><br />
+        <%= f.text_field :email_like %><br />
+    	<%= submit_tag "Find a friend" %>
+    </fieldset>
 <% end %>

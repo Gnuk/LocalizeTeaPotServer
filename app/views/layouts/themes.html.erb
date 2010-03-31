@@ -20,8 +20,9 @@
             <li><%= link_to "Contact us", "mailto:sbooob@gmail.com" %></li>
             
           <% else %>
-          	<li><%= link_to "My profile", user_path %></li>
-          	<li><%= link_to "My friends", my_friendships_path %></li>
+          	<li><%= link_to "My profile", user_path(current_user.id) %></li>
+          	<li><%= link_to "My status", statuts_path %></li>
+          	<li><%= link_to "My friends", user_friendships_path(current_user.id) %></li>
             <li><%= link_to "Log out <span class=\"small\">(#{current_user.login})</span>", destroy_session_path %></li>
           
           <% end %>

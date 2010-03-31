@@ -1,6 +1,6 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
-# Arthur est un kiki
+
 class ApplicationController < ActionController::Base
   helper :all
   helper_method :current_user_session, :current_user
@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
       if current_user
         store_location
         flash[:notice] = "You must be logged out to access this page"
-        redirect_to user_url
+        redirect_to user_url(current_user.id)
         return false
       end
     end
@@ -44,13 +44,5 @@ class ApplicationController < ActionController::Base
     def redirect_back_or_default(default)
       redirect_to(session[:return_to] || default)
       session[:return_to] = nil
-    end
-    
-    ########
-    # ToDo #
-	########
-    
-    def method_missing(method)
-    	redirect_to root_url
     end
 end
