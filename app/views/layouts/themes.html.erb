@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title><%=h SITE_CONFIG[:app_name] %> | <%=h yield(:title) %></title>
+    <%= use_theme('slicehost') %>
+  </head>
+  <body>
+  
+    <div id='root'>
+      <div id='header'>
+
+        <div id='logo'>
+          <%= link_to image_tag('logo.png', :border => 0, :height => 100, :alt => SITE_CONFIG[:app_name]), root_path %>
+        </div>
+        
+        <ul id='navigation'>
+          <li><%= link_to "Home", root_path %></li>
+          
+          <% if current_user == nil || current_user.logged_in? == false %>
+            <li><%= link_to "Log in", new_session_path %></li>
+            <li><%= link_to "Contact us", "mailto:sbooob@gmail.com" %></li>
+            
+          <% else %>
+          	<li><%= link_to "My profile", user_path(current_user.id) %></li>
+          	<li><%= link_to "My friends", user_friendships_path(current_user.id) %></li>
+          	<li><%= link_to "My statuses", user_statuses_path(current_user.id) %></li>
+            <li><%= link_to "Log out <span class=\"small\">(#{current_user.login})</span>", destroy_session_path %></li>
+          
+          <% end %>
+        </ul>
+        <div class='clear'></div>
+      </div>
+
+      <div id='contents'>
+        <% if @imgTitle == nil 
+       		@imgTitle = "profile.png"
+        end %>
+       <%= link_to image_tag(@imgTitle, :border => 0, :class => "right", :alt => SITE_CONFIG[:app_name]), root_path %>
+        <div id='page_title_container'>
+          <h1 class='title'><%= yield(:title) || "Untitled" %></h1>
+          <h3 class='subtitle'><%= yield(:subtitle) || "Description goes here" %></h3>
+        </div>
+        
+        <%= display_flash(flash) %>
+        
+        <%= yield %>
+        
+        <div id='root_footer'></div>
+
+      </div>
+      
+      <div id='footer'>
+        &copy <%= Time.now.year %> <%=h SITE_CONFIG[:copyright] %>. All Rights Reserved.
+      </div>
+      
+    </div>
+  </body>
+</html>

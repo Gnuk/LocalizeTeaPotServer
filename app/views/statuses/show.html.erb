@@ -1,0 +1,13 @@
+<% title("Detailed status") %>
+<% subtitle("Here you will find some details about a user's status.") %>
+<% @imgTitle = "status.png" %>
+
+
+<h3><%= @friend.login %></h3>
+<span><%= @status.message %>)</span>
+<br />
+<br />
+<span>Position: <%= @status.latitude %>; <%= @status.longitude %></span>
+<br />
+<span><%= time_ago_in_words(@status.created_at) %></span> ago.<br />
+<%= link_to 'Remove status', user_status_path, :method => :delete, :confirm => "Are you sure ?" %>
