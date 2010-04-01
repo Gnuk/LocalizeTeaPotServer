@@ -1,0 +1,4 @@
+<% div_for status do %>
+    <h3><%= link_to(status.message, user_status_path(current_user.id, status.id)) %></h3>
+    <span>Published <%= time_ago_in_words(status.created_at) %> ago</span>
+<% end %>

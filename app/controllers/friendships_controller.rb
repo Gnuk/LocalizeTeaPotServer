@@ -15,6 +15,13 @@ class FriendshipsController < ApplicationController
   		flash[:notice] = "Sorry, you can only check your friends' profiles!"
   		redirect_back_or_default user_friendships_url
   	else
+		@last_status = Status.find_by_user_id(params[:id])
+	  	unless @last_status
+	  		@last_status = Status.new
+	  		@last_status.message = "This user never published a status"
+	  		@last_status.latitude = 0
+	  		@last_status.longitude = 0
+	  	end
 	  	respond_to do |format|
 	  		format.html
 	  	end
@@ -46,11 +53,28 @@ class FriendshipsController < ApplicationController
   end
   
   def edit
-  
+    @friendship = Friendship.find(params[:id])
   end
   
   def update
-  
+    @friendship = Friendship.find(params[:id])
+	friend = User.find_by_login(params[:friendship][:friend_login])
+	if friend
+		params[:friendship][:friend_id] = friend.id
+		params[:friendship].delete(:friend_login)
+	    if @friendship.update_attributes(params[:friendship])
+	      flash[:notice] = "Friendship updated!"
+	      redirect_to user_friendship_url
+	    else
+	      render :action => :edit
+	    end
+	else
+		flash[:notice] = "User doesn't exist!"
+		@friendship = Friendship.find(params[:id])
+		render :action => :edit	
+	end
+    debugger
+
   end
   
   def destroy

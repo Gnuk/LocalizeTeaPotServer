@@ -1,5 +1,7 @@
 <% title("Edit My Account") %>
 <% subtitle("Here you can edit your profile.") %> 
+<% @imgTitle = "profile.png" %>
+
 <% form_for @user, :url => user_path(current_user.id) do |f| %>
   <%= f.error_messages %>
   <%= render :partial => "form", :object => f %>

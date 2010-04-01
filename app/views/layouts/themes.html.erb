@@ -9,7 +9,7 @@
       <div id='header'>
 
         <div id='logo'>
-          <%= link_to image_tag('logo.png', :border => 0, :height => 80, :alt => SITE_CONFIG[:app_name]), root_path %>
+          <%= link_to image_tag('logo.png', :border => 0, :height => 100, :alt => SITE_CONFIG[:app_name]), root_path %>
         </div>
         
         <ul id='navigation'>
@@ -21,8 +21,8 @@
             
           <% else %>
           	<li><%= link_to "My profile", user_path(current_user.id) %></li>
-          	<li><%= link_to "My status", statuts_path %></li>
           	<li><%= link_to "My friends", user_friendships_path(current_user.id) %></li>
+          	<li><%= link_to "My statuses", user_statuses_path(current_user.id) %></li>
             <li><%= link_to "Log out <span class=\"small\">(#{current_user.login})</span>", destroy_session_path %></li>
           
           <% end %>
@@ -31,6 +31,10 @@
       </div>
 
       <div id='contents'>
+        <% if @imgTitle == nil 
+       		@imgTitle = "profile.png"
+        end %>
+       <%= link_to image_tag(@imgTitle, :border => 0, :class => "right", :alt => SITE_CONFIG[:app_name]), root_path %>
         <div id='page_title_container'>
           <h1 class='title'><%= yield(:title) || "Untitled" %></h1>
           <h3 class='subtitle'><%= yield(:subtitle) || "Description goes here" %></h3>

@@ -31,7 +31,8 @@ h1 {
 
 #logo {
 	line-height: 81px;
-	height: 81px;
+	height: 101px;
+	padding-top: 10px;
 }
 
 #logo a {
@@ -136,4 +137,16 @@ h3.subtitle {
 .flash_error {
   background-color: #FCC;
   border: solid 1px #C66;
+}
+
+.left {
+	float:left;
+	padding-right:10px;
+	margin-top:-8px;
+}
+
+.right {
+	float:right;
+	padding-right:10px;
+	margin-top:-8px;
 }
