@@ -1,0 +1,8 @@
+<% title("New status") %>
+<% subtitle("Here you can post a new status.") %>
+
+<% form_for @status, :url => user_statuses_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "Publish" %>
+<% end %>
