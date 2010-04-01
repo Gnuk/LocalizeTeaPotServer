@@ -9,5 +9,5 @@
 <br />
 <span>Position: <%= @status.latitude %>; <%= @status.longitude %></span>
 <br />
-<span><%= time_ago_in_words(@status.created_at) %></span> ago.<br />
-<%= link_to 'Remove status', user_status_path, :method => :delete, :confirm => "Are you sure ?" %>
+<span><%= time_ago_in_words(@status.created_at) %></span> ago.<br /><br />
+<span class="link del"><%= link_to 'Remove status', user_status_path, :method => :delete, :confirm => "Are you sure ?" %></span>

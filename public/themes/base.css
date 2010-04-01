@@ -939,3 +939,36 @@ input[type=submit] {
 	margin-bottom: 4px;
 }
 
+.link {
+	background-color:#4CBAE5;
+	padding:4px;
+}
+
+.link a{
+	color:white;
+	margin-left: 16px;
+}
+
+.add {
+	background-position: 3px center;
+	background-repeat: no-repeat;
+	background-image: url(../images/add.png);
+}
+
+.del {
+	background-position: 3px center;
+	background-repeat: no-repeat;
+	background-image: url(../images/del.png);
+}
+
+.edit {
+	background-position: 3px center;
+	background-repeat: no-repeat;
+	background-image: url(../images/edit.png);
+}
+
+.back {
+	background-position: 3px center;
+	background-repeat: no-repeat;
+	background-image: url(../images/back.png);
+}

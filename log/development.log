@@ -19405,3 +19405,2108 @@ Processing UsersController#show (for 127.0.0.1 at 2010-04-01 17:54:42) [GET]
 Rendering template within layouts/themes
 Rendering users/show
 Completed in 31ms (View: 3, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 17:59:04) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 15:59:04', `perishable_token` = 'sn6aDmuPlA6zTdWAzKKu', `updated_at` = '2010-04-01 15:59:04' WHERE `id` = 1[0m
+  [4;36;1mSQL (25.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 52ms (View: 3, DB: 28) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-01 17:59:06) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 15:59:06', `perishable_token` = 'Uy3E3B7G5ELeejv6BF4b', `updated_at` = '2010-04-01 15:59:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 24ms (DB: 3) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 17:59:07) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 15:59:07', `perishable_token` = 'BhNZoQb_byGc0a3TMOBs', `updated_at` = '2010-04-01 15:59:07' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 36ms (View: 3, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 17:59:07) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 15:59:07', `perishable_token` = 'LJWQ9vzPqW1aclpJ9exs', `updated_at` = '2010-04-01 15:59:07' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 27ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 17:59:08) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 15:59:08', `perishable_token` = 'BVEQR0u_RlPZKf2IdJBu', `updated_at` = '2010-04-01 15:59:08' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.9ms)
+Completed in 37ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 17:59:09) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 15:59:09', `perishable_token` = 'CA9kDo4O16zOiaLROyBs', `updated_at` = '2010-04-01 15:59:09' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 73ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 17:59:10) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 15:59:10', `perishable_token` = '59vIe33k-KPhIJIUyXHL', `updated_at` = '2010-04-01 15:59:10' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;35;1mStatus Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (4.8ms)
+Completed in 35ms (View: 6, DB: 7) | 200 OK [http://localhost/users/1/statuses]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-01 18:03:31) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:03:31', `perishable_token` = 'ZtVL_6c5z3yNJHR1i-Bc', `updated_at` = '2010-04-01 16:03:31' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 27ms (DB: 4) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:03:31) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:03:31', `perishable_token` = 'YD2TkpmZ-mS6omrBRh4-', `updated_at` = '2010-04-01 16:03:31' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 32ms (View: 3, DB: 6) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:03:32) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:03:32', `perishable_token` = '9PJXgtb-cByC4fH7EPFG', `updated_at` = '2010-04-01 16:03:32' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 28ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:08:50) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:50', `perishable_token` = 'LabbeIz_SvIe0RMC8py1', `updated_at` = '2010-04-01 16:08:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 28ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:08:53) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:53', `perishable_token` = 'Gz9tGRfGG3PVjNUgzHMr', `updated_at` = '2010-04-01 16:08:53' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.4ms)
+Completed in 37ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:08:53) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:53', `perishable_token` = 'PhOUHiIGAsxAfAY0Cxbh', `updated_at` = '2010-04-01 16:08:53' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 75ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:08:54) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:54', `perishable_token` = 'sO_osGxWJyZlJw4g_x9t', `updated_at` = '2010-04-01 16:08:54' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.7ms)
+Completed in 36ms (View: 6, DB: 4) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:08:54) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:54', `perishable_token` = 'fBEPQIK5IgV_Y-6reQ0t', `updated_at` = '2010-04-01 16:08:54' WHERE `id` = 1[0m
+  [4;35;1mSQL (23.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 50ms (View: 3, DB: 27) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:08:55) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:55', `perishable_token` = 'OkniUqsgS0zR0snNpbeT', `updated_at` = '2010-04-01 16:08:55' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 38ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:08:56) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:56', `perishable_token` = '_OrXu8iwGv_Hpj8syUUZ', `updated_at` = '2010-04-01 16:08:56' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 27ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:08:57) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:57', `perishable_token` = 'KXPF50jyngfIh1Zbe5kC', `updated_at` = '2010-04-01 16:08:57' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.3ms)
+Completed in 36ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:08:59) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:08:59', `perishable_token` = 'uJbGj1CsHAb3xeIkWRRN', `updated_at` = '2010-04-01 16:08:59' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 33ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:09:05) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:09:05', `perishable_token` = 'dKW297ZelCduC_rJtSH0', `updated_at` = '2010-04-01 16:09:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.2ms)
+Completed in 88ms (View: 7, DB: 6) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:09:15) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:09:15', `perishable_token` = 'rUgdbrGRJJvYDKB6ZVXa', `updated_at` = '2010-04-01 16:09:15' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (4.0ms)
+Completed in 35ms (View: 6, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:09:15) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:09:15', `perishable_token` = 'j4AjOA8IEpbOK3rULuAp', `updated_at` = '2010-04-01 16:09:15' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (1.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 37ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:12:37) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:12:37', `perishable_token` = 'ahmLes5qZiPMm_SSnyOT', `updated_at` = '2010-04-01 16:12:37' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.9ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (5.3ms)
+Completed in 103ms (View: 17, DB: 7) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:14:43) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:14:43', `perishable_token` = 'iiyeZNrwYnCY7pd7gDdI', `updated_at` = '2010-04-01 16:14:43' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.4ms)
+Completed in 37ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:14:44) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:14:44', `perishable_token` = 'b0idMfdw-Qkxmz3dnM5X', `updated_at` = '2010-04-01 16:14:44' WHERE `id` = 1[0m
+  [4;35;1mSQL (26.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (21.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.9ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.8ms)
+Completed in 84ms (View: 6, DB: 51) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:15:08) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:15:08', `perishable_token` = 'BcuGMZdkgAwyU5MaFtbl', `updated_at` = '2010-04-01 16:15:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.2ms)
+Completed in 41ms (View: 6, DB: 7) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:15:21) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:15:21', `perishable_token` = 'vfThpHtpB9WjxF1CnyDk', `updated_at` = '2010-04-01 16:15:21' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (2.8ms)
+Completed in 37ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:15:44) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:15:44', `perishable_token` = 'eJwQrhHJic90z2G_cF3e', `updated_at` = '2010-04-01 16:15:44' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.5ms)
+Completed in 84ms (View: 7, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#new (for 127.0.0.1 at 2010-04-01 18:16:06) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"new", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:16:06', `perishable_token` = 'wbuARgbvu0sRD8nSAZEb', `updated_at` = '2010-04-01 16:16:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (1.7ms)
+Completed in 48ms (View: 18, DB: 4) | 200 OK [http://localhost/users/1/friendships/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:16:08) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:16:08', `perishable_token` = 'eiJQdaZMebLAioB4-bzb', `updated_at` = '2010-04-01 16:16:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 30ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:16:09) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:16:09', `perishable_token` = 'XMvQH1Q7UX53-hM7XjgM', `updated_at` = '2010-04-01 16:16:09' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (1.1ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.7ms)
+Completed in 41ms (View: 9, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:27:57) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:27:57', `perishable_token` = 'PUYrFznX2mZvtfqCwtmG', `updated_at` = '2010-04-01 16:27:57' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 46ms (View: 14, DB: 6) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:27:58) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:27:58', `perishable_token` = 'jFqhnvcFo1O3_0DvFaTg', `updated_at` = '2010-04-01 16:27:58' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (49.9ms)
+Completed in 85ms (View: 52, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:28:09) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:28:09', `perishable_token` = 'Xml4P3d_jVcFpk5iin83', `updated_at` = '2010-04-01 16:28:09' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.2ms)
+Completed in 38ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:28:09) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:28:09', `perishable_token` = 'mcL5P9IGv8s4sGPOecmX', `updated_at` = '2010-04-01 16:28:09' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 42ms (View: 5, DB: 7) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:28:13) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:28:13', `perishable_token` = 'kkTfGleEiYH-_jYoDJ3F', `updated_at` = '2010-04-01 16:28:13' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.4ms)
+Completed in 37ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:28:14) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:28:14', `perishable_token` = 'WqrPtvAcqo3g9Kd74br8', `updated_at` = '2010-04-01 16:28:14' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 37ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:28:15) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:28:15', `perishable_token` = 'GS6_6yKuDjjlsZORCEOf', `updated_at` = '2010-04-01 16:28:15' WHERE `id` = 1[0m
+  [4;36;1mSQL (26.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (18.9ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (21.8ms)
+Completed in 78ms (View: 6, DB: 49) | 200 OK [http://localhost/users/1/statuses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:28:16) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:28:16', `perishable_token` = '5L6DMWQKER-4GGY73Eab', `updated_at` = '2010-04-01 16:28:16' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.7ms)
+Completed in 85ms (View: 6, DB: 6) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:28:33) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:28:33', `perishable_token` = '2qu7q9zcpOmRJ7O2wNk6', `updated_at` = '2010-04-01 16:28:33' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 37ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:29:57) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:29:57', `perishable_token` = '_d2HiWaZItiNsVGWBkh4', `updated_at` = '2010-04-01 16:29:57' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 41ms (View: 6, DB: 11) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:30:58) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:30:58', `perishable_token` = 'UxYXvTmmyOHhzrsxfTuK', `updated_at` = '2010-04-01 16:30:58' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.2ms)
+Completed in 36ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:31:47) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:31:47', `perishable_token` = 'klNfRJb-9NKBLWDY3ZNb', `updated_at` = '2010-04-01 16:31:47' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 35ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:31:54) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:31:54', `perishable_token` = '_9o0YKdfFpCJZxOQxQVG', `updated_at` = '2010-04-01 16:31:54' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.6ms)
+Completed in 85ms (View: 7, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:32:24) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:32:24', `perishable_token` = '4_tg-jf4dluc93Xci1zP', `updated_at` = '2010-04-01 16:32:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 37ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:32:30) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:32:30', `perishable_token` = 'wvpDvtE30qVG1nIFcOJe', `updated_at` = '2010-04-01 16:32:30' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.2ms)
+Completed in 37ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:32:35) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:32:35', `perishable_token` = 'jfYBgzbR0I1gVK1IR6tu', `updated_at` = '2010-04-01 16:32:35' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.4ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 38ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:32:43) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:32:43', `perishable_token` = '0mQKK5g6q2r9balaSflI', `updated_at` = '2010-04-01 16:32:43' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (2.9ms)
+Completed in 35ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:32:55) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:32:55', `perishable_token` = 'l-J81P7HgGu4IDDwrC3v', `updated_at` = '2010-04-01 16:32:55' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.5ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 88ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:32:59) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:32:59', `perishable_token` = 'CGDhrlvXlELGXHzxbzXB', `updated_at` = '2010-04-01 16:32:59' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 95ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:33:00) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:33:00', `perishable_token` = 'G-B873YXbrRLwIlvE5r6', `updated_at` = '2010-04-01 16:33:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (32.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (19.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.4ms)
+Completed in 88ms (View: 6, DB: 55) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#new (for 127.0.0.1 at 2010-04-01 18:33:09) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"new", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:33:09', `perishable_token` = 'n_Q_5Bsmu1fEqHZDYZA8', `updated_at` = '2010-04-01 16:33:09' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (0.7ms)
+Completed in 39ms (View: 10, DB: 4) | 200 OK [http://localhost/users/1/friendships/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-01 18:33:12) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:33:12', `perishable_token` = 'W-yRRi6aPLf9GAWLWSi-', `updated_at` = '2010-04-01 16:33:12' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 26ms (DB: 5) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:33:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:33:12', `perishable_token` = 'GDvRwJjFUc6Tfca100hW', `updated_at` = '2010-04-01 16:33:12' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 28ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:33:13) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:33:13', `perishable_token` = 'vXq69aB4OdoBNSsJZl6J', `updated_at` = '2010-04-01 16:33:13' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 28ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-01 18:33:15) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:33:15', `perishable_token` = '7SW4dPRowlA-DVnuITtC', `updated_at` = '2010-04-01 16:33:15' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 23ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:33:15) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:33:15', `perishable_token` = '3Oqy86nPqTwMpcJ85N0x', `updated_at` = '2010-04-01 16:33:15' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 29ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:34:40) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:34:40', `perishable_token` = 'u_eW_KkO94SwlNbgFmWw', `updated_at` = '2010-04-01 16:34:40' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (50.9ms)
+Completed in 84ms (View: 53, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:34:41) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:34:41', `perishable_token` = 'GsxlqzJaPveOAZfJBOCD', `updated_at` = '2010-04-01 16:34:41' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 29ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:34:42) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:34:42', `perishable_token` = 'rfMBLET0OMvKvy_nXpUW', `updated_at` = '2010-04-01 16:34:42' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.6ms)
+Completed in 37ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:34:46) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:34:46', `perishable_token` = '_gk3qM-h0NBU3XhVNA7w', `updated_at` = '2010-04-01 16:34:46' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 44ms (View: 5, DB: 8) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#edit (for 127.0.0.1 at 2010-04-01 18:34:48) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"edit", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:34:48', `perishable_token` = 'MgamMj5G8WyVv_kZLAu5', `updated_at` = '2010-04-01 16:34:48' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/edit
+Rendered friendships/_form (0.7ms)
+Completed in 45ms (View: 14, DB: 5) | 200 OK [http://localhost/users/1/friendships/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:34:50) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:34:50', `perishable_token` = 'eOnWc41C65CQS0ggjzus', `updated_at` = '2010-04-01 16:34:50' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.9ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 45ms (View: 6, DB: 8) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:35:05) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (4.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:35:05', `perishable_token` = 'TUqGUBnpLpixwGlFbIpP', `updated_at` = '2010-04-01 16:35:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (201.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.6ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 267ms (View: 7, DB: 216) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#edit (for 127.0.0.1 at 2010-04-01 18:35:06) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"edit", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:35:06', `perishable_token` = 'jsqeyohIwM2XCptS-Zj5', `updated_at` = '2010-04-01 16:35:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.4ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/edit
+Rendered friendships/_form (0.7ms)
+Completed in 47ms (View: 15, DB: 6) | 200 OK [http://localhost/users/1/friendships/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:35:16) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:35:16', `perishable_token` = 'okc3i9wjPb8GNucgUkyZ', `updated_at` = '2010-04-01 16:35:16' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.8ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 42ms (View: 5, DB: 7) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#edit (for 127.0.0.1 at 2010-04-01 18:35:17) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"edit", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:35:17', `perishable_token` = 'ZvKAJrK-QqBkhCNOX0rK', `updated_at` = '2010-04-01 16:35:17' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/edit
+Rendered friendships/_form (1.7ms)
+Completed in 84ms (View: 8, DB: 4) | 200 OK [http://localhost/users/1/friendships/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:35:19) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:35:19', `perishable_token` = 'UG3A4k6F40lnzCBJh0kn', `updated_at` = '2010-04-01 16:35:19' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.4ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.5ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 43ms (View: 6, DB: 6) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:38:21) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (28.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:38:21', `perishable_token` = 'IlTYrO6U0bMHnptHob03', `updated_at` = '2010-04-01 16:38:21' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;35;1mStatus Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;35;1mUser Load (2.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 79ms (View: 5, DB: 35) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#edit (for 127.0.0.1 at 2010-04-01 18:38:22) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"edit", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:38:22', `perishable_token` = 'rp5QAn0s9JwjfY3i7jFO', `updated_at` = '2010-04-01 16:38:22' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/edit
+Rendered friendships/_form (0.9ms)
+Completed in 96ms (View: 15, DB: 4) | 200 OK [http://localhost/users/1/friendships/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:38:26) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:38:26', `perishable_token` = 'j_zqFpDF9azREQsVsrqo', `updated_at` = '2010-04-01 16:38:26' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.6ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 44ms (View: 6, DB: 7) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:39:35) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:39:35', `perishable_token` = 'DwA4InLIXJfxo1wLwcMH', `updated_at` = '2010-04-01 16:39:35' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 27ms (View: 2, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:40:43) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:40:43', `perishable_token` = '9gM-osecIlkazkPGB1ZO', `updated_at` = '2010-04-01 16:40:43' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 83ms (View: 11, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-04-01 18:40:45) [GET]
+  Parameters: {"controller"=>"users", "action"=>"edit", "id"=>"1"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:40:45', `perishable_token` = 'tFdhwHQzowtc2px4Re5b', `updated_at` = '2010-04-01 16:40:45' WHERE `id` = 1[0m
+  [4;35;1mSQL (21.9ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/edit
+Rendered users/_form (4.9ms)
+Completed in 60ms (View: 16, DB: 25) | 200 OK [http://localhost/users/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:40:47) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:40:47', `perishable_token` = 'ivN20uqJY4tciUDpCuuy', `updated_at` = '2010-04-01 16:40:47' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 27ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:40:49) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:40:49', `perishable_token` = 'l4E54hJD-pzxFTUHPClm', `updated_at` = '2010-04-01 16:40:49' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.4ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 88ms (View: 8, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#new (for 127.0.0.1 at 2010-04-01 18:40:50) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"new", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:40:50', `perishable_token` = 'aS_sqnw6T95HjKisk0aQ', `updated_at` = '2010-04-01 16:40:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (0.7ms)
+Completed in 38ms (View: 9, DB: 5) | 200 OK [http://localhost/users/1/friendships/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:40:52) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:40:52', `perishable_token` = 'RW_-J6vhskLlq-Ek7YZ6', `updated_at` = '2010-04-01 16:40:52' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (4.2ms)
+Completed in 43ms (View: 13, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:40:54) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:40:54', `perishable_token` = 'pcyo7jh7rNsHEkoUieJR', `updated_at` = '2010-04-01 16:40:54' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 78ms (View: 3, DB: 6) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:00) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:00', `perishable_token` = 'FIhOItpaQpH5VrUxH-rY', `updated_at` = '2010-04-01 16:41:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 38ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:41:04) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:04', `perishable_token` = 'kHwUXAAakTG6UackNqMy', `updated_at` = '2010-04-01 16:41:04' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.4ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.7ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 43ms (View: 7, DB: 7) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:07) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:07', `perishable_token` = 'tXyhEtPoFV1NbyantJhX', `updated_at` = '2010-04-01 16:41:07' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (4.2ms)
+Completed in 83ms (View: 6, DB: 6) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#new (for 127.0.0.1 at 2010-04-01 18:41:08) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"new", "user_id"=>"1"}
+  [4;35;1mUser Columns (142.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:08', `perishable_token` = '81GyuNakJOTV7EoZCJpv', `updated_at` = '2010-04-01 16:41:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (0.7ms)
+Completed in 181ms (View: 11, DB: 145) | 200 OK [http://localhost/users/1/friendships/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:10) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.1ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:10', `perishable_token` = 'fd7aOcvOqADh4lRwl5fb', `updated_at` = '2010-04-01 16:41:10' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.3ms)
+Completed in 38ms (View: 6, DB: 6) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:10) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:10', `perishable_token` = '8cpd2DlW7emYJpRWEnRH', `updated_at` = '2010-04-01 16:41:10' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (1.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (2.9ms)
+Completed in 37ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:41:11) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:11', `perishable_token` = 'EraV8JOO2Td8FQuHKRKo', `updated_at` = '2010-04-01 16:41:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (2.1ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 46ms (View: 6, DB: 8) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:41:13) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:13', `perishable_token` = 'OduhMRxA3__XpB33jnx8', `updated_at` = '2010-04-01 16:41:13' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (3.8ms)
+Completed in 35ms (View: 5, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#show (for 127.0.0.1 at 2010-04-01 18:41:14) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:14', `perishable_token` = '13Krq_sgehqcnKG_8MQV', `updated_at` = '2010-04-01 16:41:14' WHERE `id` = 1[0m
+  [4;36;1mSQL (20.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (21.7ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`id` = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering statuses/show
+Completed in 88ms (View: 14, DB: 46) | 200 OK [http://localhost/users/1/statuses/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#show (for 127.0.0.1 at 2010-04-01 18:41:47) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:47', `perishable_token` = 'TnV6MLC0cjnwR1I4hH2F', `updated_at` = '2010-04-01 16:41:47' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`id` = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering statuses/show
+Completed in 53ms (View: 14, DB: 6) | 200 OK [http://localhost/users/1/statuses/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:52) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:52', `perishable_token` = '_PoVaMxBvfm_N0pSSsdg', `updated_at` = '2010-04-01 16:41:52' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 38ms (View: 5, DB: 6) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:56) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:56', `perishable_token` = 'hoxWq-jB-hG_Ofr7HjqF', `updated_at` = '2010-04-01 16:41:56' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (3.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (4.5ms)
+Completed in 88ms (View: 6, DB: 9) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:41:57) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:57', `perishable_token` = 'a6qFyLfoNkbS2Hl2O3LF', `updated_at` = '2010-04-01 16:41:57' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 27ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:58) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:58', `perishable_token` = 'mrojggODNlsr9n0IA05K', `updated_at` = '2010-04-01 16:41:58' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.1ms)
+Completed in 37ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:41:59) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:41:59', `perishable_token` = 'fXKbB7_t0FTQKXyLXGYa', `updated_at` = '2010-04-01 16:41:59' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 29ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:41:59) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:42:00', `perishable_token` = 'He4TAA3eXTQQG9T8_Xgr', `updated_at` = '2010-04-01 16:42:00' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 95ms (View: 6, DB: 6) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:42:00) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:42:00', `perishable_token` = 'vZf1ubT9yV31w-e0fiWC', `updated_at` = '2010-04-01 16:42:00' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (5.2ms)
+Completed in 37ms (View: 7, DB: 5) | 200 OK [http://localhost/users/1/statuses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:42:01) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:42:01', `perishable_token` = 'Z17qSPaY-7wyGp0x3kxc', `updated_at` = '2010-04-01 16:42:01' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.3ms)
+Completed in 36ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:42:02) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:42:02', `perishable_token` = 'AVqLMou6crHDJSh_r5fH', `updated_at` = '2010-04-01 16:42:02' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 91ms (View: 6, DB: 6) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:43:26) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (30.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:43:26', `perishable_token` = 'C5Hlnf2hClqmpOccVxPG', `updated_at` = '2010-04-01 16:43:26' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 88ms (View: 13, DB: 36) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:43:50) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:43:50', `perishable_token` = 'tiuFj4lGqNG3rP9TTi-K', `updated_at` = '2010-04-01 16:43:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (3.5ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 131ms (View: 77, DB: 17) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:44:16) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:16', `perishable_token` = '8Q3rPheHiBQo7UdPlU7H', `updated_at` = '2010-04-01 16:44:16' WHERE `id` = 1[0m
+  [4;35;1mSQL (29.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (21.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 99ms (View: 13, DB: 55) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-01 18:44:23) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:23', `perishable_token` = '20HoI-o02Vda0AbLsWbx', `updated_at` = '2010-04-01 16:44:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 24ms (DB: 3) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:23) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:23', `perishable_token` = 'KfI-_lgrlVb45C35HYqg', `updated_at` = '2010-04-01 16:44:23' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 79ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:27) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:27', `perishable_token` = 'dc0drmLm8wHg5AP5mD9-', `updated_at` = '2010-04-01 16:44:27' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 27ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:28) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:28', `perishable_token` = 'i7QJYnVErMM4_oqfOwfg', `updated_at` = '2010-04-01 16:44:28' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 31ms (View: 3, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-04-01 18:44:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"edit", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:29', `perishable_token` = 'vPJtJWbKN15IR8L4XKo8', `updated_at` = '2010-04-01 16:44:29' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/edit
+Rendered users/_form (3.8ms)
+Completed in 31ms (View: 7, DB: 3) | 200 OK [http://localhost/users/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:30) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:31', `perishable_token` = 'EexVEI4cfUAVYe2aURZK', `updated_at` = '2010-04-01 16:44:31' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 77ms (View: 3, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:44:31) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:31', `perishable_token` = 'U0N2f9-1DDRwDoLYxphT', `updated_at` = '2010-04-01 16:44:31' WHERE `id` = 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.4ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.0ms)
+Completed in 36ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#new (for 127.0.0.1 at 2010-04-01 18:44:32) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"new", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:32', `perishable_token` = 'Vz91Jrtcahgdjulkxjk9', `updated_at` = '2010-04-01 16:44:32' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (0.7ms)
+Completed in 38ms (View: 9, DB: 4) | 200 OK [http://localhost/users/1/friendships/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:44:34) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:34', `perishable_token` = 'TYWHPwwPzex-TesBpxmv', `updated_at` = '2010-04-01 16:44:34' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.4ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (3.4ms)
+Completed in 86ms (View: 7, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:44:35) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:35', `perishable_token` = 'Vf6Kzsc3jUj9rts7D2Mi', `updated_at` = '2010-04-01 16:44:35' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.4ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 44ms (View: 6, DB: 7) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:44:36) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:36', `perishable_token` = 'hlVxzDnKiVtYKn8BzWMx', `updated_at` = '2010-04-01 16:44:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (3.7ms)
+Completed in 34ms (View: 5, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:44:37) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:37', `perishable_token` = 'hcT3R7ZhNa7yp1C-4cIT', `updated_at` = '2010-04-01 16:44:37' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.6ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (52.9ms)
+Completed in 87ms (View: 55, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:44:38) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:38', `perishable_token` = 'nWUt2SpkbnqryMC-1-To', `updated_at` = '2010-04-01 16:44:38' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (4.6ms)
+Completed in 36ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/statuses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:39) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:39', `perishable_token` = 'uC2UKgtIfK96pUTdd9Wt', `updated_at` = '2010-04-01 16:44:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 27ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-01 18:44:41) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:41', `perishable_token` = '-4rNvtx8a07_E9lvbjGE', `updated_at` = '2010-04-01 16:44:41' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered friendships/_friendship (2.9ms)
+Completed in 35ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:44:42) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:42', `perishable_token` = 'WSPpXRboxXBdtx_Ux8L7', `updated_at` = '2010-04-01 16:44:42' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;35;1mStatus Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 91ms (View: 6, DB: 7) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#edit (for 127.0.0.1 at 2010-04-01 18:44:43) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"edit", "user_id"=>"1", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:43', `perishable_token` = 'x4KuQlRUGVAUxnm_WbY2', `updated_at` = '2010-04-01 16:44:43' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.5ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/edit
+Rendered friendships/_form (0.8ms)
+Completed in 35ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-01 18:44:45) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"1"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:45', `perishable_token` = 'npYmHfTyOXi83s6wXYgx', `updated_at` = '2010-04-01 16:44:45' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 1) [0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '1') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 46ms (View: 8, DB: 7) | 200 OK [http://localhost/users/1/friendships/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:44:46) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:46', `perishable_token` = 'nKXhAgHZSRcwttQSQsF1', `updated_at` = '2010-04-01 16:44:46' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (4.4ms)
+Completed in 82ms (View: 6, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#new (for 127.0.0.1 at 2010-04-01 18:44:48) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"new", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:48', `perishable_token` = 'eKpvJ-uCuRDaZylEcJ0s', `updated_at` = '2010-04-01 16:44:48' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+Rendering template within layouts/themes
+Rendering statuses/new
+Rendered statuses/_form (0.5ms)
+Completed in 42ms (View: 15, DB: 4) | 200 OK [http://localhost/users/1/statuses/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-01 18:44:50) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:50', `perishable_token` = 'Hz2rnA6ngUXJTrnYfTV0', `updated_at` = '2010-04-01 16:44:50' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (3.7ms)
+Completed in 34ms (View: 5, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:51) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:51', `perishable_token` = 'Jn9b34KYdVNaC8ucVh14', `updated_at` = '2010-04-01 16:44:51' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 28ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-01 18:44:52) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:52', `perishable_token` = 'DUopyucesoIo2joKGdog', `updated_at` = '2010-04-01 16:44:52' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 26ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:52) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:52', `perishable_token` = 'bo6JsIXIl1jBazVk8VBx', `updated_at` = '2010-04-01 16:44:52' WHERE `id` = 1[0m
+  [4;35;1mSQL (28.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 59ms (View: 3, DB: 31) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-01 18:44:54) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '82989708c5a0392bdc7f9a6a4f89d703c527f2f675c3647e42d0860987b9af6f6d56323704838c70e3c35a3fba46c182cc18dbfb9d69a350cafd2c4de9853d1f') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-01 16:44:54', `perishable_token` = 'f31y-CPA0LRxnTKRzIBb', `updated_at` = '2010-04-01 16:44:54' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 28ms (View: 3, DB: 3) | 200 OK [http://localhost/users/1]
