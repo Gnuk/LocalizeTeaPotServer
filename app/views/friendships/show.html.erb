@@ -12,9 +12,13 @@
 <h3><%= friend.login %></h3>
 <span><%= friend.first_name %> <%= friend.last_name %> (<%= friend.email %>)</span>
 <br />
+<span>Current status message: <%= @last_status.message %></span>
+<br />
+<span>Last position: <%= @last_status.latitude %>; <%= @last_status.longitude %></span>
+<br />
 <span>Gender: <%= gender %></span>
 <br />
 <span>Birthday: <%= friend.birthday %></span>
 <br />
 <span>Established <%= time_ago_in_words(friend.created_at) %></span> ago.<br />
-<%= link_to 'Remove from firends', @friendships, :method => :delete, :confirm => "Are you sure ?" %>
+<%= link_to 'Remove from friends', @friendships, :method => :delete, :confirm => "Are you sure ?" %> | <%= link_to 'Edit friendship', edit_user_friendship_path %>
