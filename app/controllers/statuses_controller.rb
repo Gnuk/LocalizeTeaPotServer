@@ -30,6 +30,20 @@ class StatusesController < ApplicationController
 		end
 	end
 	
+	def edit
+		@status = Status.find(params[:id])
+	end
+	
+	def update
+	    @status = Status.find(params[:id])
+	    if @status.update_attributes(params[:status])
+	      flash[:notice] = "Status updated!"
+	      redirect_to user_status_url
+	    else
+	      render :action => :edit
+	    end
+	end
+	
 	def destroy
 		@status = Status.find(params[:id])
 		@status.destroy

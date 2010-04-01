@@ -40,7 +40,9 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   config.gem "authlogic"
   config.gem "searchlogic"
-  config.gem "calendar_date_select"  
+  config.gem "calendar_date_select" 
+  config.gem "geokit"
+ 
 end
 
 CalendarDateSelect.format = :italian

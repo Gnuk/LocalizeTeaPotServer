@@ -3,7 +3,7 @@ class CreateStatuses < ActiveRecord::Migration
     create_table :statuses do |t|
       t.float :latitude
       t.float :longitude
-      t.text :message
+      t.string :message
       t.integer :user_id
 
       t.timestamps

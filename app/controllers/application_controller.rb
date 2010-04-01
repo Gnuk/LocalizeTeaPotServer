@@ -45,4 +45,13 @@ class ApplicationController < ActionController::Base
       redirect_to(session[:return_to] || default)
       session[:return_to] = nil
     end
+    
+	def add_marker_for(address,title=address)
+	  position = Geokit::Geocoders::MultiGeocoder.geocode(address)
+	  gmarker = GMarker.new([position.lat,position.lng],
+	    :title => title
+	  )
+	  @map.overlay_init(gmarker)
+	end
+	    
 end

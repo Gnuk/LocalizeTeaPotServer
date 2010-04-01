@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20100401053012) do
   create_table "statuses", :force => true do |t|
     t.float    "latitude"
     t.float    "longitude"
-    t.text     "message"
+    t.string   "message"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

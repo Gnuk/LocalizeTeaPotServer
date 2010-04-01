@@ -1,0 +1,9 @@
+<% title("Edit a status") %>
+<% subtitle("Here you can edit a status.") %> 
+<% form_for(@status, :url => user_status_path, :method => "put") do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "Update" %>
+<% end %>
+ 
+<br /><%= link_to "My statuses", user_status_path %>
