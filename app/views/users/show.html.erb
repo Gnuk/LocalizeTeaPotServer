@@ -1,11 +1,8 @@
 <% title("Profile Sumarry") %>
 <% subtitle("Here you'll find various details about your profile.") %> 
 
-<p>
-  <b>Login:</b>
-  <%=h @user.login %>
-</p>
- 
+<h3><%=h @user.login %></h3>
+<p class="status_message">«<%= @status.message %>»</p>
 <p>
   <b>Login count:</b>
   <%=h @user.login_count %>
@@ -17,13 +14,13 @@
 </p>
  
 <p>
-  <b>Last login at:</b>
-  <%=h @user.last_login_at %>
+  <b>Last login:</b>
+  <%=h time_ago_in_words(@user.last_login_at) %> ago
 </p>
  
 <p>
-  <b>Current login at:</b>
-  <%=h @user.current_login_at %>
+  <b>You are online for:</b>
+  <%=h time_ago_in_words(@user.current_login_at) %>
 </p>
  
 <p>
@@ -37,4 +34,7 @@
 </p>
  
  
-<%= link_to 'Edit', edit_user_path %>
+<%= link_to 'Edit', edit_user_path %> | 
+<%= link_to 'Update my status', new_user_status_path(current_user.id) %> | 
+<%= link_to 'Edit my status', edit_user_status_path(current_user.id, Status.find_by_user_id(current_user.id)) %> | 
+<%= link_to 'Manage my statuses', user_statuses_path(current_user.id) %>
