@@ -1,0 +1,43 @@
+<% form_for @search do |f| %>
+    <fieldset>
+        <legend>Search Users</legend>
+		<%= f.label :first_name_like, "First Name" %>
+        <%= f.text_field :first_name_like %><br />
+        <%= f.label :last_name_like, "Last Name" %>
+        <%= f.text_field :last_name_like %><br />
+		<%= f.label :login_like, "Login" %>
+        <%= f.text_field :login_like %><br />
+		<%= f.label :email_like, "E-mail" %>
+        <%= f.text_field :email_like %><br />
+    	<%= submit_tag "Search" %>
+    </fieldset>
+<% end %>
+
+<% if @users_count > 0 %>
+    <%= @users_count %> users found
+	<ul></ul>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th><%= order @search, :by => :id %></th>
+            <th><%= order @search, :by => :first_name %></th>
+            <th><%= order @search, :by => :last_name %></th>
+            <th><%= order @search, :by => :email %></th>
+            <th>Ajouter</th>
+        </tr>
+        <% @users.each do |user| %>
+            <tr>
+                <td><%= user.id %></td>
+                <td><%= user.first_name %></td>
+                <td><%= user.last_name %></td>
+                <td><%= user.email %></td>
+                <td><%= link_to "Ajouter",  user_friendships_path(current_user.id, {:friendship => {:user_id => current_user.id, :friend_login => user.login, :see_position => 0}}), :method => :create %></td>
+            </tr>
+        <% end %>
+    </table>
+    </ul>
+
+    <br />
+    <br />
+<% else %>
+    No users were returned
+<% end %>
