@@ -30311,3 +30311,1007 @@ Rendering template within layouts/themes
 Rendering users/show
   [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
 Completed in 40ms (View: 5, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-02 08:28:00) [GET]
+
+ActionController::RoutingError (No route matches "/plugin" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 08:28:05) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:05', `perishable_token` = 'lMWZPL7N0722Gb2YpoeR', `updated_at` = '2010-04-02 06:28:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 379ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:06) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:06', `perishable_token` = '0pJuD3JNxHKHu3CtklHW', `updated_at` = '2010-04-02 06:28:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 74ms (View: 28, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:06) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:06', `perishable_token` = 'jcaDGvw7eT9iuxFvkiCq', `updated_at` = '2010-04-02 06:28:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 51ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:06) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:06', `perishable_token` = '75HCs1azRGfCkjLJ5p3T', `updated_at` = '2010-04-02 06:28:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 49ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:12', `perishable_token` = '17zCiMqmhXT3xqh6qqZN', `updated_at` = '2010-04-02 06:28:12' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 103ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:13) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:13', `perishable_token` = 'mQr6LjdmyNN-BJ8daAEV', `updated_at` = '2010-04-02 06:28:13' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 48ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:19) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:19', `perishable_token` = 'NfKFP22_FL97m55jtJ7-', `updated_at` = '2010-04-02 06:28:19' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 105ms (View: 61, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:19) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:19', `perishable_token` = 'ciA5RB93bq9_szCyPNwY', `updated_at` = '2010-04-02 06:28:19' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 48ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:21) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=2&s="}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:22', `perishable_token` = '9jiR7bpMwrMe3Zhl_ABb', `updated_at` = '2010-04-02 06:28:22' WHERE `id` = 1[0m
+  [4;35;1mSQL (14.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (7.6ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 68ms (View: 7, DB: 25) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=2&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=2&s=&tretry=1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:22', `perishable_token` = 'UZC1gykItNZVTiFfUTtI', `updated_at` = '2010-04-02 06:28:22' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 46ms (View: 6, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=2&s=&tretry=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:23) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=0&s="}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:23', `perishable_token` = 'n0VbW-UagpMyKmOqftiX', `updated_at` = '2010-04-02 06:28:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 47ms (View: 6, DB: 5) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=0&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:24) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=0&s=&tretry=1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:24', `perishable_token` = 'hp59-GPMcACeaHrfpxzD', `updated_at` = '2010-04-02 06:28:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 101ms (View: 6, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=0&s=&tretry=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:36', `perishable_token` = '1j9x-N34cIfL0xD4EnaR', `updated_at` = '2010-04-02 06:28:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 46ms (View: 7, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:36', `perishable_token` = 'qV4Y8Wcz8s_q8-UHyzlz', `updated_at` = '2010-04-02 06:28:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 49ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:28:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:28:36', `perishable_token` = '7Kdqnrz7g6B0ww4aHLdo', `updated_at` = '2010-04-02 06:28:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 48ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:29:00) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:29:00', `perishable_token` = 'hRBfRN-11i3WAbRoo1E0', `updated_at` = '2010-04-02 06:29:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 102ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:29:00) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:29:00', `perishable_token` = '7KO9XOz0ZYbPsMOZiYc1', `updated_at` = '2010-04-02 06:29:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 46ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 08:32:05) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;35;1mUser Columns (53.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:05', `perishable_token` = 'W-Ac9EwePViPBrbX6ogD', `updated_at` = '2010-04-02 06:32:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 82ms (DB: 56) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:32:05) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:05', `perishable_token` = 'qof_biRWqrdz3fp9fq67', `updated_at` = '2010-04-02 06:32:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 58ms (View: 7, DB: 15) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:32:06) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (13.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (13.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:06', `perishable_token` = 'fZASjge20dRSurDmadWs', `updated_at` = '2010-04-02 06:32:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (7.6ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (13.5ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 108ms (View: 8, DB: 55) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:32:06) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mUser Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (16.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:06', `perishable_token` = 'DH7IXZvday1o1zOYo3cx', `updated_at` = '2010-04-02 06:32:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (14.9ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 94ms (View: 7, DB: 47) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:32:13) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (905.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (269.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:14', `perishable_token` = '6ildU9MDBC9whTuezng5', `updated_at` = '2010-04-02 06:32:14' WHERE `id` = 1[0m
+  [4;36;1mSQL (151.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (262.9ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (94.4ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 1733ms (View: 7, DB: 1685) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:32:16) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (111.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (356.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:16', `perishable_token` = '275NrwJwiOT7L5kazwid', `updated_at` = '2010-04-02 06:32:16' WHERE `id` = 1[0m
+  [4;36;1mSQL (66.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (78.6ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (2.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 661ms (View: 7, DB: 615) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:32:18) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (89.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:18', `perishable_token` = '5_y6W3RRgyYIYL8aKsxd', `updated_at` = '2010-04-02 06:32:18' WHERE `id` = 1[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (80.8ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (8.9ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 236ms (View: 7, DB: 190) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 08:32:18) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mUser Columns (65.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:18', `perishable_token` = '2K_K1WMnVbiQQocvHfGQ', `updated_at` = '2010-04-02 06:32:18' WHERE `id` = 1[0m
+  [4;36;1mSQL (40.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (17.6ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 232ms (View: 7, DB: 126) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 08:32:21) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (12.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (10.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:21', `perishable_token` = 'B7EJ4LzjR6Am21srg4I9', `updated_at` = '2010-04-02 06:32:21' WHERE `id` = 1[0m
+  [4;36;1mSQL (9.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (9.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.3ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendered friendships/_friendship (4.9ms)
+Completed in 106ms (View: 25, DB: 44) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-02 08:32:23) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"26"}
+  [4;36;1mUser Columns (18.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (10.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 06:32:23', `perishable_token` = '9I1FFYM5q-zxCY1gnvDK', `updated_at` = '2010-04-02 06:32:23' WHERE `id` = 1[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.8ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 26) [0m
+  [4;35;1mStatus Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '26') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Completed in 158ms (View: 15, DB: 42) | 200 OK [http://localhost/users/1/friendships/26]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 09:41:08) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (21.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:08', `perishable_token` = 'Znek3uLlGL4-40CIwNG3', `updated_at` = '2010-04-02 07:41:08' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.6ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendered friendships/_friendship (57.8ms)
+Completed in 143ms (View: 62, DB: 25) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 09:41:10) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:10', `perishable_token` = 'I0C2A4men4IT806_5Res', `updated_at` = '2010-04-02 07:41:10' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 30ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:10) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:10', `perishable_token` = 'ZEykFXrY-7P2KdCP6IS5', `updated_at` = '2010-04-02 07:41:10' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 47ms (View: 7, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:11) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;35;1mUser Columns (9.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:11', `perishable_token` = 'zjmHWR6ey4tLV-DDnLwK', `updated_at` = '2010-04-02 07:41:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (1.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 66ms (View: 7, DB: 17) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:11) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:11', `perishable_token` = '8wzksXMGYiejwGL_CO3m', `updated_at` = '2010-04-02 07:41:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 48ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 09:41:23) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:23', `perishable_token` = 'hAknZAoLE1xU5Tbdqt40', `updated_at` = '2010-04-02 07:41:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 30ms (DB: 3) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:23) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:23', `perishable_token` = 'dPesY7SKm-PFjRx6K45k', `updated_at` = '2010-04-02 07:41:23' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 48ms (View: 7, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:24) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:24', `perishable_token` = 'GgUoNaoWvMcexpHeYyrB', `updated_at` = '2010-04-02 07:41:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 107ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:24) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:24', `perishable_token` = 'lpWNB8zYJ3SWuWtL7SDC', `updated_at` = '2010-04-02 07:41:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 49ms (View: 7, DB: 5) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:24) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:24', `perishable_token` = 'BdeQtvwJ0eaxykRG0D4u', `updated_at` = '2010-04-02 07:41:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (14.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (6.7ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.5ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 71ms (View: 7, DB: 25) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:25) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:25', `perishable_token` = 'NDDK-6PTeB0JJo0oIVY3', `updated_at` = '2010-04-02 07:41:25' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 48ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:25) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:25', `perishable_token` = '_VIv5B6IRBQ-gs5flcv-', `updated_at` = '2010-04-02 07:41:25' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 50ms (View: 8, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 09:41:25) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:25', `perishable_token` = 'vxEnQDRiTtVitckJ_jYZ', `updated_at` = '2010-04-02 07:41:25' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendered friendships/_friendship (3.7ms)
+Completed in 46ms (View: 7, DB: 4) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-02 09:41:27) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:27', `perishable_token` = 'EIG2a0WGwVt4DiF6fUDb', `updated_at` = '2010-04-02 07:41:27' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (5.7ms)
+Rendered statuses/_status (0.7ms)
+Rendered statuses/_status (0.6ms)
+Completed in 152ms (View: 26, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 09:41:29) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:29', `perishable_token` = 'sXHkMewD7p72K8fX59cK', `updated_at` = '2010-04-02 07:41:29' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 29ms (DB: 3) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:29', `perishable_token` = 'ufv2Pm_gxOvENKbrUdr8', `updated_at` = '2010-04-02 07:41:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 49ms (View: 7, DB: 5) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:29', `perishable_token` = 'DUJvvACUaSGUiqraxrCQ', `updated_at` = '2010-04-02 07:41:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 106ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:29', `perishable_token` = 'IOPd-3E1gGOn4FGnZ_gW', `updated_at` = '2010-04-02 07:41:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 56ms (View: 9, DB: 5) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:39) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:39', `perishable_token` = 'YxQzJDOPRX14cvM7vtTN', `updated_at` = '2010-04-02 07:41:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 47ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:42) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:43', `perishable_token` = '7BH36OfnIL3on6MtLnYw', `updated_at` = '2010-04-02 07:41:43' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 46ms (View: 6, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:43) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s="}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:43', `perishable_token` = '6YRh9jH7_d-Cq7LkoBPL', `updated_at` = '2010-04-02 07:41:43' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 46ms (View: 6, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 09:41:43) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"x=NaN&y=NaN&z=10&s=&tretry=1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 07:41:43', `perishable_token` = 'BO6LA6Tr56o-GjiMn42N', `updated_at` = '2010-04-02 07:41:43' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 48ms (View: 7, DB: 4) | 200 OK [http://localhost/users/x=NaN&y=NaN&z=10&s=&tretry=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 09:44:54) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (35.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/themes
+Rendering user_sessions/new
+Completed in 126ms (View: 53, DB: 36) | 200 OK [http://localizeteapot.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 10:00:59) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (111.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (14.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 08:00:59', `perishable_token` = 'QnOSrvmCzumSr9r5tSwt', `updated_at` = '2010-04-02 08:00:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (26.7ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (12.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (edit_user_status_url failed to generate from {:controller=>"statuses", :action=>"edit", :user_id=>1, :id=>nil}, expected: {:controller=>"statuses", :action=>"edit"}, diff: {:user_id=>1, :id=>nil}) on line #43 of app/views/users/show.html.erb:
+40: 
+41: <span class="link edit"><%= link_to 'Edit my profile', edit_user_path %></span><br/><br/> 
+42: <span class="link add"><%= link_to 'Update my status', new_user_status_path(current_user.id) %></span>
+43: <span class="link edit"><%= link_to 'Edit my status', edit_user_status_path(current_user.id, Status.find_by_user_id(current_user.id)) %></span>
+44: <!-- <span class="link edit"><%= link_to 'Manage my statuses', user_statuses_path(current_user.id) %></span>-->
+
+    (eval):16:in `edit_user_status_path'
+    app/views/users/show.html.erb:43
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (154.7ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 10:12:33) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (9.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 08:12:34', `perishable_token` = 'm9Ko0AOpcoono6xShpgB', `updated_at` = '2010-04-02 08:12:34' WHERE `id` = 1[0m
+  [4;36;1mSQL (31.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (edit_user_status_url failed to generate from {:controller=>"statuses", :action=>"edit", :user_id=>1, :id=>nil}, expected: {:controller=>"statuses", :action=>"edit"}, diff: {:user_id=>1, :id=>nil}) on line #47 of app/views/users/show.html.erb:
+44: <%= if @status.nil?
+45: 		"No status"
+46: 	else
+47: 		link_to 'Edit my status', edit_user_status_path(current_user.id, Status.find_by_user_id(current_user.id)) 
+48: 	end 
+49: %>
+50: </span>
+
+    (eval):16:in `edit_user_status_path'
+    app/views/users/show.html.erb:47
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (91.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 10:13:17) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 08:13:17', `perishable_token` = 'BM1Fz_SoQq7E5Bc6I__R', `updated_at` = '2010-04-02 08:13:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (edit_user_status_url failed to generate from {:controller=>"statuses", :action=>"edit", :user_id=>1, :id=>nil}, expected: {:controller=>"statuses", :action=>"edit"}, diff: {:user_id=>1, :id=>nil}) on line #47 of app/views/users/show.html.erb:
+44: <%= if @status.nil?
+45: 		"No status"
+46: 	else
+47: 		link_to 'Edit my status', edit_user_status_path(current_user.id, Status.find_by_user_id(current_user.id)) 
+48: 	end 
+49: %>
+50: </span>
+
+    (eval):16:in `edit_user_status_path'
+    app/views/users/show.html.erb:47
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 10:13:59) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 08:13:59', `perishable_token` = 'CtA32OSi9uGXymixKZCF', `updated_at` = '2010-04-02 08:13:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+Completed in 121ms (View: 79, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 10:14:48) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 08:14:48', `perishable_token` = 'hTd1-kadQ4f1wASHJkvV', `updated_at` = '2010-04-02 08:14:48' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Completed in 56ms (View: 15, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 10:14:56) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 08:14:56', `perishable_token` = 'KvP9UnQSyldp-2QRm4Bn', `updated_at` = '2010-04-02 08:14:56' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Completed in 57ms (View: 15, DB: 4) | 200 OK [http://localhost/users/1]

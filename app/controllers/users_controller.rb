@@ -19,6 +19,12 @@ class UsersController < ApplicationController
   def show
     @user = @current_user
     @status = Status.find_last_by_user_id(@user)
+	unless @status
+		@status = Status.new
+	  	@status.message = "This user never published a status"
+	  	@status.latitude = 45.6439
+	  	@status.longitude = 5.86805
+	end
     
     #Google map
     @map = GMap.new("map_div")#name of the html element that will hold the map
