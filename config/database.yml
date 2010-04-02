@@ -18,10 +18,10 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: LocalizeTeaPot_development
+  database: LTP_development
   pool: 5
   username: root
-  password: bV79NhY
+  password: 
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -31,18 +31,18 @@ test:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: LocalizeTeaPot_development
+  database: LTP_test
   pool: 5
   username: root
-  password: bV79NhY
+  password: 
   socket: /tmp/mysql.sock
 
 production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: LocalizeTeaPot_development
+  database: LTP_production
   pool: 5
   username: root
-  password: bV79NhY
+  password: 
   socket: /tmp/mysql.sock

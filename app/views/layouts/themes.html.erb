@@ -2,6 +2,13 @@
   <head>
     <title><%=h SITE_CONFIG[:app_name] %> | <%=h yield(:title) %></title>
     <%= use_theme('slicehost') %>
+    <% if @map %>
+	<%= GMap.header%>
+	<%= javascript_include_tag 'ym4r-gm' %>
+	<%= javascript_include_tag 'application' %>
+	<%= @map.to_html %>
+	<% end %>
+
   </head>
   <body>
   
