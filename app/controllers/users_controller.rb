@@ -28,12 +28,12 @@ class UsersController < ApplicationController
     
     #Google map
     @map = GMap.new("map_div")#name of the html element that will hold the map
-    @map.control_init(:large_map => true,:map_type => true)
+    @map.control_init(:large_map => true, :map_type => true)
     @map.center_zoom_init([@status.latitude,@status.longitude],10)
     @map.overlay_init(GMarker.new([@status.latitude,@status.longitude],:title => @status.message))
     
     #IPGeoloc
-    # add_marker_for('88.187.224.193')
+    add_marker_for('88.187.224.193')
 
   end
  
@@ -60,8 +60,10 @@ class UsersController < ApplicationController
 
   def add_marker_for(address,title=address)
     position = Geokit::Geocoders::MultiGeocoder.geocode(address)
-    gmarker = GMarker.new([position.lat,position.lng],
-      :title => title
+    if title.nil?
+    	title = "No title"
+    end
+    gmarker = GMarker.new([position.lat,position.lng], :title => title
     )
     @map.overlay_init(gmarker)
   end
