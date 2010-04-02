@@ -32,7 +32,8 @@ h1 {
 #logo {
 	line-height: 81px;
 	height: 101px;
-	padding-top: 10px;
+	padding-top: 6px;
+	padding-bottom: 4px;
 }
 
 #logo a {

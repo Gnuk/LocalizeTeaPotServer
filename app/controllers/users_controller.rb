@@ -32,23 +32,8 @@ class UsersController < ApplicationController
     @map.center_zoom_init([@status.latitude,@status.longitude],10)
     @map.overlay_init(GMarker.new([@status.latitude,@status.longitude],:title => @status.message))
     
-    # @marker_icon= onomo_marker_icon
-
-    add_marker_for('Dakar','Dakar Aeroport')
-    add_marker_for('Abidjan')
-    add_marker_for('Pointe Nore')
-    add_marker_for('Brazzaville')
-    add_marker_for('Mali')
-    add_marker_for('Kinshasa')
-    add_marker_for('Accra')
-    add_marker_for('Lome')
-    add_marker_for('Ouada')
-    add_marker_for('Douala')
-    add_marker_for('Malabo')
-    add_marker_for('Libreville')
-    add_marker_for('Luanda, Angola')
-    add_marker_for('Johannesbourg')
-    add_marker_for('88.187.224.193')
+    #IPGeoloc
+    # add_marker_for('88.187.224.193')
 
   end
  
