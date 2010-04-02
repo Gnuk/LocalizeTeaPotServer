@@ -32607,3 +32607,1197 @@ Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 13:42:55) [GE
 Rendering template within layouts/themes
 Rendering user_sessions/new
 Completed in 156ms (View: 82, DB: 19) | 200 OK [http://localizeteapot.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:19:34) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/themes
+Rendering user_sessions/new
+Completed in 201ms (View: 143, DB: 2) | 200 OK [http://localizeteapot.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 15:19:36) [POST]
+  Parameters: {"user_session"=>{"login"=>"sbooob", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "controller"=>"user_sessions", "action"=>"create"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'sbooob') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `login_count` = 46, `last_login_at` = '2010-04-02 13:13:12', `current_login_at` = '2010-04-02 13:19:36', `last_request_at` = '2010-04-02 13:19:36', `perishable_token` = 'GVmHGj8E5XbNjpmCaBWS', `updated_at` = '2010-04-02 13:19:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'sbooob') LIMIT 1[0m
+Redirected to http://localizeteapot.local/users/1
+Completed in 269ms (DB: 3) | 302 Found [http://localizeteapot.local/session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:19:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:19:36', `perishable_token` = 'aRbXEJQdrjTb-XByDuF6', `updated_at` = '2010-04-02 13:19:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (105.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:20:12) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:13', `perishable_token` = 'mB9wlZJH40MHEaRKNwf7', `updated_at` = '2010-04-02 13:20:13' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 165ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:20:13) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:13', `perishable_token` = '_uUI01BIQjrzVDCGa3qW', `updated_at` = '2010-04-02 13:20:13' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 15:20:32) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:32', `perishable_token` = 'YKz-HO8GU1GVIyUVUIFA', `updated_at` = '2010-04-02 13:20:32' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered friendships/_friendship (3.5ms)
+Completed in 94ms (View: 68, DB: 4) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#new (for 127.0.0.1 at 2010-04-02 15:20:42) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"new", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:42', `perishable_token` = 'k22d_HibSThGaHB-x31m', `updated_at` = '2010-04-02 13:20:42' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (1.3ms)
+Completed in 69ms (View: 43, DB: 4) | 200 OK [http://localhost/users/1/friendships/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#create (for 127.0.0.1 at 2010-04-02 15:20:50) [POST]
+  Parameters: {"friendship"=>{"user_id"=>"1", "friend_login"=>"bobb", "see_position"=>"0"}, "commit"=>"Add a friend", "controller"=>"friendships", "action"=>"create", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:50', `perishable_token` = 'wk0DhSLmZlh8c7uxA5g6', `updated_at` = '2010-04-02 13:20:50' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'bobb') LIMIT 1[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (0.6ms)
+Completed in 31ms (View: 6, DB: 4) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#create (for 127.0.0.1 at 2010-04-02 15:20:54) [POST]
+  Parameters: {"friendship"=>{"user_id"=>"1", "friend_login"=>"booby", "see_position"=>"0"}, "commit"=>"Add a friend", "controller"=>"friendships", "action"=>"create", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:54', `perishable_token` = 'FM5u5hJ_OzU2jE8q5-0q', `updated_at` = '2010-04-02 13:20:54' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'booby') LIMIT 1[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (0.6ms)
+Completed in 32ms (View: 6, DB: 4) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#create (for 127.0.0.1 at 2010-04-02 15:20:59) [POST]
+  Parameters: {"friendship"=>{"user_id"=>"1", "friend_login"=>"bobby", "see_position"=>"0"}, "commit"=>"Add a friend", "controller"=>"friendships", "action"=>"create", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:59', `perishable_token` = 'luvPqHkaYG-fygIIChH_', `updated_at` = '2010-04-02 13:20:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'bobby') LIMIT 1[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT `friendships`.id FROM `friendships` WHERE (`friendships`.`user_id` = 1 AND `friendships`.friend_id = 3) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.1ms)[0m   [0mINSERT INTO `friendships` (`user_id`, `friend_id`, `see_position`, `created_at`, `updated_at`) VALUES(1, 3, 0, '2010-04-02 13:20:59', '2010-04-02 13:20:59')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1/friendships
+Completed in 30ms (DB: 4) | 302 Found [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 15:20:59) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:20:59', `perishable_token` = '_jXLcBVzdA2lpT65gVIh', `updated_at` = '2010-04-02 13:20:59' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered friendships/_friendship (2.8ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendered friendships/_friendship (0.9ms)
+Completed in 34ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-02 15:21:01) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"27"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:01', `perishable_token` = 'aYFuUn7MdRzajcGIzwxR', `updated_at` = '2010-04-02 13:21:01' WHERE `id` = 1[0m
+  [4;36;1mSQL (25.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (10.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.4ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 27) [0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '27') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Completed in 78ms (View: 10, DB: 40) | 200 OK [http://localhost/users/1/friendships/27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#destroy (for 127.0.0.1 at 2010-04-02 15:21:04) [DELETE]
+  Parameters: {"_method"=>"delete", "controller"=>"friendships", "action"=>"destroy", "user_id"=>"1", "id"=>"27"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:04', `perishable_token` = 'ec0dNOfxyDzrLA8l52YB', `updated_at` = '2010-04-02 13:21:04' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.4ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 27) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFriendship Destroy (0.1ms)[0m   [0;1mDELETE FROM `friendships` WHERE `id` = 27[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1/friendships
+Completed in 27ms (DB: 4) | 302 Found [http://localhost/users/1/friendships/27]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 15:21:04) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:04', `perishable_token` = 'OpbfHOr0AGvgfq3TxCp8', `updated_at` = '2010-04-02 13:21:04' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (1.4ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered friendships/_friendship (2.8ms)
+Completed in 34ms (View: 5, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#new (for 127.0.0.1 at 2010-04-02 15:21:06) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"new", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:06', `perishable_token` = 'yI0avfV-PmnNlAhWSUKi', `updated_at` = '2010-04-02 13:21:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+Rendering template within layouts/themes
+Rendering friendships/new
+Rendered friendships/_form (0.6ms)
+Completed in 33ms (View: 8, DB: 4) | 200 OK [http://localhost/users/1/friendships/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 127.0.0.1 at 2010-04-02 15:21:10) [GET]
+  Parameters: {"search"=>{"order"=>"", "first_name_like"=>"", "last_name_like"=>"", "login_like"=>"bob", "email_like"=>""}, "commit"=>"Find a friend", "controller"=>"users", "action"=>"search"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (users.login LIKE '%bob%') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` WHERE (users.login LIKE '%bob%') [0m
+Rendering template within layouts/themes
+Rendering users/search
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:10', `perishable_token` = 'x18GY_yzQT6VRWkeC8Hj', `updated_at` = '2010-04-02 13:21:10' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 45ms (View: 29, DB: 3) | 200 OK [http://localhost/users/search?search%5Border%5D=&search%5Bfirst_name_like%5D=&search%5Blast_name_like%5D=&search%5Blogin_like%5D=bob&search%5Bemail_like%5D=&commit=Find+a+friend]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 127.0.0.1 at 2010-04-02 15:21:17) [GET]
+  Parameters: {"search"=>{"order"=>"", "first_name_like"=>"", "last_name_like"=>"bianchi", "login_like"=>"", "email_like"=>""}, "commit"=>"Search", "controller"=>"users", "action"=>"search"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (users.last_name LIKE '%bianchi%') [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` WHERE (users.last_name LIKE '%bianchi%') [0m
+Rendering template within layouts/themes
+Rendering users/search
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:17', `perishable_token` = 'RkWzDNZC1RRMCuUOucH8', `updated_at` = '2010-04-02 13:21:17' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Completed in 37ms (View: 21, DB: 3) | 200 OK [http://localhost/users/search?search%5Border%5D=&search%5Bfirst_name_like%5D=&search%5Blast_name_like%5D=bianchi&search%5Blogin_like%5D=&search%5Bemail_like%5D=&commit=Search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#search (for 127.0.0.1 at 2010-04-02 15:21:21) [GET]
+  Parameters: {"search"=>{"order"=>"", "first_name_like"=>"", "last_name_like"=>"", "login_like"=>"bob", "email_like"=>""}, "commit"=>"Search", "controller"=>"users", "action"=>"search"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (users.login LIKE '%bob%') [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` WHERE (users.login LIKE '%bob%') [0m
+Rendering template within layouts/themes
+Rendering users/search
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:21', `perishable_token` = 'OerOrundPLNLPY1RyOEM', `updated_at` = '2010-04-02 13:21:21' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 37ms (View: 21, DB: 3) | 200 OK [http://localhost/users/search?search%5Border%5D=&search%5Bfirst_name_like%5D=&search%5Blast_name_like%5D=&search%5Blogin_like%5D=bob&search%5Bemail_like%5D=&commit=Search]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#create (for 127.0.0.1 at 2010-04-02 15:21:23) [POST]
+  Parameters: {"_method"=>"create", "friendship"=>{"friend_login"=>"bobby", "see_position"=>"0", "user_id"=>"1"}, "controller"=>"friendships", "action"=>"create", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:23', `perishable_token` = '_0QZALS05PNm4hi1FhLi', `updated_at` = '2010-04-02 13:21:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'bobby') LIMIT 1[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT `friendships`.id FROM `friendships` WHERE (`friendships`.`user_id` = 1 AND `friendships`.friend_id = 3) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.1ms)[0m   [0;1mINSERT INTO `friendships` (`user_id`, `friend_id`, `see_position`, `created_at`, `updated_at`) VALUES(1, 3, 0, '2010-04-02 13:21:23', '2010-04-02 13:21:23')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1/friendships
+Completed in 30ms (DB: 4) | 302 Found [http://localhost/users/1/friendships?friendship%5Bfriend_login%5D=bobby&friendship%5Bsee_position%5D=0&friendship%5Buser_id%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 15:21:23) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:23', `perishable_token` = '0-wca-ibr2GF7seiX2ln', `updated_at` = '2010-04-02 13:21:23' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered friendships/_friendship (2.7ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendered friendships/_friendship (0.9ms)
+Completed in 34ms (View: 6, DB: 4) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-04-02 15:21:30) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:30', `perishable_token` = 'bjz8rvhXp4kTAn20jXpy', `updated_at` = '2010-04-02 13:21:30' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (4.4ms)
+Completed in 84ms (View: 60, DB: 4) | 200 OK [http://localhost/users/1/statuses]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#show (for 127.0.0.1 at 2010-04-02 15:21:35) [GET]
+  Parameters: {"controller"=>"statuses", "action"=>"show", "user_id"=>"1", "id"=>"5"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:21:35', `perishable_token` = 'QC9qWdvFu9JLxKDHoM81', `updated_at` = '2010-04-02 13:21:35' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.8ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`id` = 5) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/themes
+Rendering statuses/show
+Completed in 37ms (View: 11, DB: 4) | 200 OK [http://localhost/users/1/statuses/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 15:22:19) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:22:19', `perishable_token` = 'slbze9xtzVwnmuK3kkDp', `updated_at` = '2010-04-02 13:22:19' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (0.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered friendships/_friendship (2.8ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendered friendships/_friendship (0.9ms)
+Completed in 33ms (View: 6, DB: 4) | 200 OK [http://localhost/users/1/friendships]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#show (for 127.0.0.1 at 2010-04-02 15:22:23) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"show", "user_id"=>"1", "id"=>"26"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:22:23', `perishable_token` = 'QjpBDAhkVhxNlM8H1IIF', `updated_at` = '2010-04-02 13:22:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (24.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (10.2ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`id` = 26) [0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = '26') LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering friendships/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Completed in 113ms (View: 3, DB: 39) | 200 OK [http://localhost/users/1/friendships/26]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-04-02 15:22:56) [GET]
+  Parameters: {"controller"=>"friendships", "action"=>"index", "user_id"=>"1"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:22:56', `perishable_token` = 'lR71VtQY6frSY5OxreDx', `updated_at` = '2010-04-02 13:22:56' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered friendships/_friendship (2.8ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendered friendships/_friendship (0.9ms)
+Completed in 33ms (View: 6, DB: 5) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:23:09) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:23:09', `perishable_token` = 'ZanAsHvpTX27Pb7nNaXN', `updated_at` = '2010-04-02 13:23:09' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:23:09) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:23:09', `perishable_token` = 'CADXn19fyAXUpPlR_QEr', `updated_at` = '2010-04-02 13:23:09' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:37:11) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:37:11', `perishable_token` = 'A_flUvAE3Vs6h_PitLuk', `updated_at` = '2010-04-02 13:37:11' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localizeteapot.local/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 166ms (DB: 3) | 302 Found [http://localizeteapot.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:37:11) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:37:11', `perishable_token` = 'FDH7KUSV_5vhdqAujYGL', `updated_at` = '2010-04-02 13:37:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (66.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:39:34) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:39:34', `perishable_token` = 'hMMq8wJZdG5WrancDhAH', `updated_at` = '2010-04-02 13:39:34' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (62.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:39:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:39:37', `perishable_token` = 'aRykFUeuwuo3SsIprfj_', `updated_at` = '2010-04-02 13:39:37' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:39:37) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:39:37', `perishable_token` = '7_Vw1cvktIL_HJY6aN12', `updated_at` = '2010-04-02 13:39:37' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (8.6ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (1.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (61.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:39:37) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:39:37', `perishable_token` = 'NOfBXCH0R6uHNXHZpGCQ', `updated_at` = '2010-04-02 13:39:37' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (60.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:39:37) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:39:37', `perishable_token` = 'vxLXDZgSFrjNc_PD34jz', `updated_at` = '2010-04-02 13:39:37' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (109.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:42:38) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:42:39', `perishable_token` = 'aQVKf9wDU_9j0nzlQYWY', `updated_at` = '2010-04-02 13:42:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 22ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:42:39) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:42:39', `perishable_token` = 'XUGs6Zld2RsCqisKSKex', `updated_at` = '2010-04-02 13:42:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (94.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:48:08) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:48:08', `perishable_token` = 'Z8jtLABr7xImS-HtkE9T', `updated_at` = '2010-04-02 13:48:08' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 20ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:48:08) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:48:08', `perishable_token` = 'gOwNnGEihjBQCJ7O6oU0', `updated_at` = '2010-04-02 13:48:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (97.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:48:23) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:48:23', `perishable_token` = 'XS-1WRmqke6iJ6XFjiXZ', `updated_at` = '2010-04-02 13:48:23' WHERE `id` = 1[0m
+  [4;36;1mSQL (10.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (6.5ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 820ms (View: 21, DB: 20) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:50:53) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:50:53', `perishable_token` = 'H_ReB8SF3gAh0qaWfOzX', `updated_at` = '2010-04-02 13:50:53' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant UsersController::GMapTypr):
+  app/controllers/users_controller.rb:32:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:51:10) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:51:10', `perishable_token` = 'gM947ppsCXadkgDRwGjD', `updated_at` = '2010-04-02 13:51:10' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 858ms (View: 21, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:55:56) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:55:56', `perishable_token` = 'FcCboQ1fDUfiN7PLEMOO', `updated_at` = '2010-04-02 13:55:56' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 582ms (View: 12, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:57:00) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:57:01', `perishable_token` = '7ElUM1WwCQsW-ObdCsE3', `updated_at` = '2010-04-02 13:57:01' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localizeteapot.local/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 167ms (DB: 3) | 302 Found [http://localizeteapot.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:57:01) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:57:01', `perishable_token` = 'rrVR_oyQHPgVvDPEOeHh', `updated_at` = '2010-04-02 13:57:01' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (69.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 15:57:07) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:57:07', `perishable_token` = 'TkxusVcANwivLIDzmHbz', `updated_at` = '2010-04-02 13:57:07' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localizeteapot.local/users/1
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 21ms (DB: 2) | 302 Found [http://localizeteapot.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:57:07) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 13:57:07', `perishable_token` = 'fgb5utV-M3Bdv2uQbfIX', `updated_at` = '2010-04-02 13:57:07' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+
+NameError (uninitialized constant Ym4r::GmPlugin::GMap::GLargeMapControl3D):
+  app/controllers/users_controller.rb:31:in `show'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (60.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:57:21) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:57:21', `perishable_token` = 'etpbwA4WBEiDfZ_tCvzD', `updated_at` = '2010-04-02 13:57:21' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 3334ms (View: 24, DB: 5) | 200 OK [http://localizeteapot.local/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 15:59:10) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 13:59:10', `perishable_token` = 'WTsM8mMdeLOD3JCrHmj6', `updated_at` = '2010-04-02 13:59:10' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (localizeteapot.local,localhost) on line #6 of app/views/layouts/themes.html.erb:
+3:     <title><%=h SITE_CONFIG[:app_name] %> | <%=h yield(:title) %></title>
+4:     <%= use_theme('slicehost') %>
+5:     <% if @map %>
+6: 		<%= GMap.header%>
+7: 		<%= javascript_include_tag 'ym4r-gm' %>
+8: 		<%= javascript_include_tag 'application' %>
+9: 		<%= @map.to_html %>
+
+    app/views/layouts/themes.html.erb:6
+    <internal:prelude>:8:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+    <internal:prelude>:8:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (79.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 16:01:00) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `last_request_at` = '2010-04-02 14:01:00', `perishable_token` = 'wiEW5tCgIoGMR0KzZY8F', `updated_at` = '2010-04-02 14:01:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (localizeteapot.local,localhost) on line #6 of app/views/layouts/themes.html.erb:
+3:     <title><%=h SITE_CONFIG[:app_name] %> | <%=h yield(:title) %></title>
+4:     <%= use_theme('slicehost') %>
+5:     <% if @map %>
+6: 		<%= GMap.header%>
+7: 		<%= javascript_include_tag 'ym4r-gm' %>
+8: 		<%= javascript_include_tag 'application' %>
+9: 		<%= @map.to_html %>
+
+    app/views/layouts/themes.html.erb:6
+    <internal:prelude>:8:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `block in handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `block (2 levels) in spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `block in spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+    <internal:prelude>:8:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 16:01:15) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 14:01:15', `perishable_token` = 'n0BBUpek3v3y9yQ13qjd', `updated_at` = '2010-04-02 14:01:15' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 7862ms (View: 26, DB: 4) | 200 OK [http://localizeteapot.local/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-02 16:01:30) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `last_request_at` = '2010-04-02 14:01:30', `perishable_token` = 'O0TijsmfUfbTSQlsKQyM', `updated_at` = '2010-04-02 14:01:30' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 505ms (View: 5, DB: 4) | 200 OK [http://localhost/users/1]

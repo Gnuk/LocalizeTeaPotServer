@@ -14,6 +14,13 @@ module Ym4r
         "new GLargeMapControl()"
       end
     end
+    #Large Map 3D control. Report to the Google Maps API documentation for details.
+    class GLargeMapControl3D
+      include MappingObject
+      def create
+        "new GLargeMapControl3D()"
+      end
+    end
     #Small Zoom control. Report to the Google Maps API documentation for details.
     class GSmallZoomControl
       include MappingObject

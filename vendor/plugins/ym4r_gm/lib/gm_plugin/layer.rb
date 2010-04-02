@@ -6,6 +6,7 @@ module Ym4r
       
       G_NORMAL_MAP = Variable.new("G_NORMAL_MAP")
       G_SATELLITE_MAP = Variable.new("G_SATELLITE_MAP")
+      G_SATELLITE_3D_MAP = Variable.new("G_SATELLITE_3D_MAP")
       G_HYBRID_MAP = Variable.new("G_HYBRID_MAP")
       G_PHYSICAL_MAP = Variable.new("G_PHYSICAL_MAP")
       

@@ -75,6 +75,7 @@ module Ym4r
       def control_init(controls = {})
         @init_end << add_control(GSmallMapControl.new) if controls[:small_map]
         @init_end << add_control(GLargeMapControl.new) if controls[:large_map]
+        @init_end << add_control(GLargeMapControl3D.new) if controls[:large_map_3D]
         @init_end << add_control(GSmallZoomControl.new) if controls[:small_zoom]
         @init_end << add_control(GScaleControl.new) if controls[:scale]
         @init_end << add_control(GMapTypeControl.new) if controls[:map_type]
