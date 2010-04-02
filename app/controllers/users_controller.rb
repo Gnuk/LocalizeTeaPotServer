@@ -36,7 +36,7 @@ class UsersController < ApplicationController
     @map.enableScrollWhellZoom(true);
     
     #IPGeoloc
-    add_marker_for('88.187.224.193')
+    add_marker_for('88.187.224.193', @user.login, @status.message)
 
   end
  
@@ -61,13 +61,12 @@ class UsersController < ApplicationController
   
   private
 
-  def add_marker_for(address,title=address)
+  def add_marker_for(address, login, message)
     position = Geokit::Geocoders::MultiGeocoder.geocode(address)
-    if title.nil?
-    	title = "No title"
+    if message.nil?
+    	message = "No Status"
     end
-    gmarker = GMarker.new([position.lat,position.lng], :title => title
-    )
+    gmarker = GMarker.new([position.lat,position.lng], :title => login, :info_window => '<h1>'+login+'</h1><h3>'+message+'</h3>'<p class="status_message">&laquo;'+message+'&raquo;</p>')
     @map.overlay_init(gmarker)
   end
 
