@@ -15,8 +15,8 @@ class FriendshipsController < ApplicationController
   		flash[:notice] = "Sorry, you can only check your friends' profiles!"
   		redirect_back_or_default user_friendships_url
   	else
-		@last_status = Status.find_by_user_id(params[:id])
-	  	unless @last_status
+		@last_status = Status.find_by_user_id(params[:user_id])
+	  	if @last_status.nil?
 	  		@last_status = Status.new
 	  		@last_status.message = "This user never published a status"
 	  		@last_status.latitude = 0

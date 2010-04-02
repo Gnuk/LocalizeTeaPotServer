@@ -2,7 +2,7 @@ class StatusesController < ApplicationController
 	before_filter :require_user
 	
 	def index
-	  	@statuses = Status.all# - Status.find_by_user_id(current_user.id)
+	  	@statuses = Status.find_last_by_user_id(current_user.id)
 	  	respond_to do |format|
 	  		format.html
 	  	end
