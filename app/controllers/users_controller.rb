@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       flash[:notice] = "Account registered!"
-      redirect_back_or_default users_url
+      redirect_back_or_default user_url
     else
       render :action => :new
     end
@@ -28,12 +28,13 @@ class UsersController < ApplicationController
     
     #Google map
     @map = GMap.new("map_div")#name of the html element that will hold the map
-    @map.control_init(:large_map => true, :map_type => true)
+    @map.control_init(:large_map_3D => true, :map_type => true)
     @map.center_zoom_init([@status.latitude,@status.longitude],10)
     @map.overlay_init(GMarker.new([@status.latitude,@status.longitude],:title => @status.message))
     
     #IPGeoloc
-    add_marker_for('88.187.224.193')
+    add_marker_for('88.187.224.193', 'Pontcharra sur breda')
+    add_marker_for('127.0.0.1')
 
   end
  

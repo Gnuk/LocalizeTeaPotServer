@@ -2,8 +2,6 @@
 <% subtitle("Here you'll find various details about your profile.") %> 
 <% @imgTitle = "profile.png" %>
 
-<%= @map.div(:width => 400, :height => 300) %>
-
 <h3><%=h @user.login %></h3>
 <%= image_tag('mess.png', :border => 0, :class => 'left', :alt => 'Last Status') %>
 <p class="status_message">&laquo;<%= @status.message %>&raquo;</p>
