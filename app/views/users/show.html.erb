@@ -12,17 +12,7 @@
   <b>Login count:</b>
   <%=h @user.login_count %>
 </p>
- 
-<p>
-  <b>Last request at:</b>
-  <%=h @user.last_request_at %>
-</p>
- 
-<p>
-  <b>Last login:</b>
-  <%=h time_ago_in_words(@user.last_login_at) %> ago
-</p>
- 
+
 <p>
   <b>You are online for:</b>
   <%=h time_ago_in_words(@user.current_login_at) %>
@@ -39,7 +29,7 @@
 </p>
 
 <span class="link edit"><%= link_to 'Edit my profile', edit_user_path %></span><br/><br/> 
-<span class="link add"><%= link_to 'Update my status', new_user_status_path(current_user.id) %></span>
+<span class="link add"><%= link_to 'Update my status', new_user_status_path(current_user.id) %></span><br/><br/>
 <span class="link edit">
 <%= if Status.find_last_by_user_id(@user).nil?
 		'<span id="no_status">No status</span>'
@@ -49,3 +39,4 @@
 %>
 </span>
 <!-- <span class="link edit"><%= link_to 'Manage my statuses', user_statuses_path(current_user.id) %></span>-->
+<hr/>

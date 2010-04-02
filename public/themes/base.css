@@ -989,3 +989,8 @@ input[type=submit] {
 	font-size: 130%;
 	font-style: italic;
 }
+
+hr{
+	float:clear;
+	visibility: hidden;
+}

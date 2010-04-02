@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   end
   
   def show
-    @user = @current_user
+    @user = @current_user    	
     @status = Status.find_last_by_user_id(@user)
 	unless @status
 		@status = Status.new
