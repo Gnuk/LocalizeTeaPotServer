@@ -19,6 +19,12 @@ class UsersController < ApplicationController
   def show
     @user = @current_user
     @status = Status.find_last_by_user_id(@user)
+    
+    #Google map
+    @map = GMap.new("map_div")#name of the html element that will hold the map
+    @map.control_init(:large_map => true,:map_type => true)
+    @map.center_zoom_init([@status.latitude,@status.longitude],10)
+    @map.overlay_init(GMarker.new([@status.latitude,@status.longitude],:title => @status.message))
   end
  
   def edit

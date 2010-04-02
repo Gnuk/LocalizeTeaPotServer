@@ -972,3 +972,15 @@ input[type=submit] {
 	background-repeat: no-repeat;
 	background-image: url(../images/back.png);
 }
+
+#map_div {
+	float:left;
+	margin-right: 10px;
+}
+
+.status_message {	
+	margin-top: -10px;
+	margin-left: 440px;
+	font-size: 130%;
+	font-style: italic;
+}
