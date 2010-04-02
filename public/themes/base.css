@@ -973,6 +973,11 @@ input[type=submit] {
 	background-image: url(../images/back.png);
 }
 
+#no_status {
+	color: #cccccc;
+	margin-left: 16px;
+}
+
 #map_div {
 	float:left;
 	margin-right: 10px;
