@@ -66,7 +66,7 @@ class UsersController < ApplicationController
     if message.nil?
     	message = "No Status"
     end
-    gmarker = GMarker.new([position.lat,position.lng], :title => login, :info_window => '<h1>'+login+'</h1><h3>'+message+'</h3>'<p class="status_message">&laquo;'+message+'&raquo;</p>')
+    gmarker = GMarker.new([position.lat,position.lng], :title => login, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+message+'&raquo;</em>')
     @map.overlay_init(gmarker)
   end
 

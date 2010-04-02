@@ -990,7 +990,16 @@ input[type=submit] {
 	font-style: italic;
 }
 
+.status_message {	
+	margin-top: -10px;
+	font-style: italic;
+}
+
 hr{
-	float:clear;
+	clear: both;
 	visibility: hidden;
+}
+
+#friends_map{
+	margin: 2em;
 }
