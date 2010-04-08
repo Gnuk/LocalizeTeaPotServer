@@ -36,7 +36,7 @@ class UsersController < ApplicationController
     @map.enableScrollWhellZoom(true);
     
     #IPGeoloc
-    add_marker_for('88.187.224.193', @user.login, @status.message)
+    add_marker_for(@user.current_login_ip, "You", "According to your IP address, we detected that you may be here.")
 
   end
  
