@@ -1,0 +1,26 @@
+<% title("About a friendship") %>
+<% subtitle("Here you will find some details about a friendship.") %>
+<% 
+	friend = User.find(@friendship.friend_id)
+	if friend.gender
+		gender = "F"
+	else
+		gender = "M"
+	end
+%>
+
+<%= @map.div(:width => 800, :height => 400) %>
+
+<h3><%= friend.login %></h3>
+<span><%= friend.first_name %> <%= friend.last_name %> (<%= friend.email %>)</span>
+<br />
+<span>Current status message: <%= @last_status.message %></span>
+<br />
+<span>Last position: <%= @last_status.latitude %>; <%= @last_status.longitude %></span>
+<br />
+<span>Gender: <%= gender %></span>
+<br />
+<span>Birthday: <%= friend.birthday %></span>
+<br />
+<span>Established <%= time_ago_in_words(friend.created_at) %></span> ago.<br /><br />
+<span class="link del"><%= link_to 'Remove from friends', @friendships, :method => :delete, :confirm => "Are you sure ?" %></span> <br/> <br/> <span class="link edit"><%= link_to 'Edit friendship', edit_user_friendship_path %></span>

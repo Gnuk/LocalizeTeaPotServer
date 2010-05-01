@@ -1,0 +1,9 @@
+<% title("Friends list") %>
+<% subtitle("Here you'll find a list of your friends.") %>
+<% @imgTitle = "friend.png" %>
+
+<%= @map.div(:width => 800, :height => 400) %>
+<hr />
+<%= render :partial => @friendships %>
+<br />
+<span class="link add"><%= link_to("Add a new friend", new_user_friendship_path) %></span>

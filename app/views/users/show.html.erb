@@ -1,0 +1,42 @@
+<% title("Profile Summary") %>
+<% subtitle("Here you'll find various details about your profile.") %> 
+<% @imgTitle = "profile.png" %>
+
+<%= @map.div(:width => 500, :height => 400) %>
+
+<h3><%=h @user.login %></h3>
+<%= image_tag('mess.png', :border => 0, :class => 'left', :alt => 'Last Status') %>
+<p class="status_message">&laquo;<%= @status.message %>&raquo;</p>
+ 
+<p>
+  <b>Login count:</b>
+  <%=h @user.login_count %>
+</p>
+
+<p>
+  <b>You are online for:</b>
+  <%=h time_ago_in_words(@user.current_login_at) %>
+</p>
+ 
+<p>
+  <b>Last login ip:</b>
+  <%=h @user.last_login_ip %>
+</p>
+ 
+<p>
+  <b>Current login ip:</b>
+  <%=h @user.current_login_ip %>
+</p>
+
+<span class="link edit"><%= link_to 'Edit my profile', edit_user_path %></span><br/><br/> 
+<span class="link add"><%= link_to 'Update my status', new_user_status_path(current_user.id) %></span><br/><br/>
+<span class="link edit">
+<%= if Status.find_last_by_user_id(@user).nil?
+		'<span id="no_status">No status</span>'
+	else
+		link_to 'Edit my status', edit_user_status_path(current_user.id, Status.find_by_user_id(current_user.id)) 
+	end 
+%>
+</span>
+<!-- <span class="link edit"><%= link_to 'Manage my statuses', user_statuses_path(current_user.id) %></span>-->
+<hr/>
