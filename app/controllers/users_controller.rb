@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_filter :require_no_user, :only => [:new, :create]
-  before_filter :require_user, :only => [:show, :edit, :update]
+  before_filter :require_user, :only => [:show, :edit, :update, :serve]
   
   def new
     @user = User.new
@@ -38,6 +38,15 @@ class UsersController < ApplicationController
     #IPGeoloc
     add_marker_for(@user.current_login_ip, "You", "According to your IP address, we detected that you may be here.")
 
+  end
+  
+  def serve
+	@user = @current_user
+	respond_to do |format|
+	  format.html { redirect_to user_url(current_user.id)}
+      format.json { render :json => @user }
+      format.xml { render :xml => @user }
+    end
   end
  
   def edit

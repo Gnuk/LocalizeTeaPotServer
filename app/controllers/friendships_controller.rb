@@ -13,16 +13,86 @@ class FriendshipsController < ApplicationController
 
 	@friendships.each do |friend|
 		friend.status = Status.find_last_by_user_id(friend.friend_id)
-	    @map.center_zoom_init([friend.status.latitude, friend.status.longitude],10)
-		login = User.find(friend.friend_id).login
-	    @map.overlay_init(GMarker.new([friend.status.latitude, friend.status.longitude], :title => login, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+friend.status.message+'&raquo;</em>'))
+		if friend.status
+			@map.center_zoom_init([friend.status.latitude, friend.status.longitude],10)
+			login = User.find(friend.friend_id).login
+			@map.overlay_init(GMarker.new([friend.status.latitude, friend.status.longitude], :title => login, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+friend.status.message+'&raquo;</em>'))
+		end
 	end
   	
   	respond_to do |format|
   		format.html
   	end
   end
-  
+ 
+  def servenew
+  	@friendships = Friendship.find_all_by_user_id(current_user.id)
+
+	xml = Builder::XmlMarkup.new()
+    xml.instruct!
+	xml.friendships do
+	  @friendships.each do |friend|
+		@friendc = User.find(friend.friend_id);
+	    xml.user(@friendc.to_xml(:skip_instruct => true, :include =>[:friend_id]))
+	    @friendc.to_xml(:skip_instruct => true, :include =>[:friend_id])
+	  end
+	end
+
+	respond_to do |format|
+	  format.xml { render :xml => xml}
+	  format.all { redirect_to :action => :index }
+	end
+  end
+
+	
+  def serve
+  	@friendships = Friendship.find_all_by_user_id(current_user.id)
+	respond_to do |format|
+	    format.html { redirect_to :action => :index }
+        format.json { render :json => @friendships }
+		format.xml { render :xml => @friendships }
+	end
+  end
+
+  def servestatuses
+  	@friendships = Friendship.find_all_by_user_id(current_user.id)
+#<gpx version="1.1" creator="LocalizeTeaPot server" xmlns="http://www.topografix.com/GPX/1/1"
+#  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+#  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+#  <wpt lat="52.2015094" lon="5.13285130000001">
+#    <name>Caroline</name>
+#  </wpt>
+#  <wpt lat="52.2069108" lon="5.11004300000001">
+#    <name>Claire</name>
+#  </wpt>
+#  <wpt lat="52.1531526" lon="5.02283559999999">
+#    <name>Alexis</name>
+#  </wpt>
+#</gpx>
+	xml = Builder::XmlMarkup.new(:indent => 2)
+    xml.instruct!
+	xml.gpx("version"=>"1.1",
+		"creator"=>"LocalizeTeaPot server",
+		"xmlns"=>"http://www.topografix.com/GPX/1/1",
+		"xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance",
+		"xsi:schemaLocation"=>"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+		) do
+	  @friendships.each do |friend|
+		@friendc = User.find(friend.friend_id);
+		@status = Status.find_by_user_id(friend.friend_id)
+	    xml.wtp("lat"=>@status.latitude,"lon"=>@status.longitude) do
+		  xml.name(@friendc.login)
+		  xml.status(@status.message)
+		end
+	  end
+	end
+
+	respond_to do |format|
+	  format.xml { render :xml => xml}
+	  format.all { redirect_to :action => :index }
+	end
+  end
+    
   def show
   	@friendship = Friendship.find(params[:id])
   	if @friendship.user_id != current_user.id

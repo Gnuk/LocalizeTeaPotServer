@@ -21,8 +21,8 @@ development:
   database: LocalizeTeaPot_development
   pool: 5
   username: root
-  password: bV79NhY
-  socket: /tmp/mysql.sock
+  password: root
+  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -34,8 +34,8 @@ test:
   database: LocalizeTeaPot_test
   pool: 5
   username: root
-  password: bV79NhY
-  socket: /tmp/mysql.sock
+  password: root
+  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 production:
   adapter: mysql
@@ -44,5 +44,5 @@ production:
   database: LocalizeTeaPot_production
   pool: 5
   username: root
-  password: bV79NhY
-  socket: /tmp/mysql.sock
+  password: root
+  socket: /Applications/MAMP/tmp/mysql/mysql.sock

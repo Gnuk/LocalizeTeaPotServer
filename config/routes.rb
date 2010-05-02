@@ -40,7 +40,12 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   #map.connect ':controller/:action/:id'
   #map.connect ':controller/:action/:id.:format'
-  
+  map.connect 'api/users/:login.:format', :controller => :users, :action => 'serve', :conditions => { :method => :get }
+  map.connect 'api/users/:login/friendships/.:format', :controller => :friendships, :action => 'serve'
+  map.connect 'api/localisations/:login/.:format', :controller => :statuses, :action => 'serve', :conditions => { :method => :get }
+  map.connect 'api/localisations/:login/.:format', :controller => :statuses, :action => 'createfromput', :conditions => { :method => :put }
+  map.connect 'api/localisations/:login/friendships/.:format', :controller => :friendships, :action => 'servestatuses'
+    
   map.root :controller => :user_sessions, :action => :new
   
   map.resources :users, :collection => { :search => :get }, :has_many => [:friendships, :statuses]

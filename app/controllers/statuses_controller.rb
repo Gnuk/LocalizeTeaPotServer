@@ -9,7 +9,8 @@ class StatusesController < ApplicationController
 	end
 	
 	def new
-		@status = Status.new
+		position = Geokit::Geocoders::MultiGeocoder.geocode(current_user.current_login_ip)
+		@status = Status.new :latitude => position.lat, :longitude => position.lng
 	end
 	
 	def create
@@ -22,6 +23,34 @@ class StatusesController < ApplicationController
 	    end
 	end
 	
+  def createfromput
+	doc = REXML::Document.new(request.body);
+	latAttr = REXML::XPath.first(doc,"/ltp/gpx_file/@lat")
+	lngAttr = REXML::XPath.first(doc,"/ltp/gpx_file/@lon")
+	message = REXML::XPath.first(doc,"/ltp/gpx_file/text()")
+	@status = Status.find_by_user_id(current_user.id)
+	if @status then
+		@status.update_attributes(:message => message.value, :latitude => latAttr.value, :longitude => lngAttr.value)
+	else
+		@status = Status.new(:message => message, :latitude => latAttr.value, :longitude => lngAttr.value)
+	end
+	@status.save
+	respond_to do |format|
+	    format.html { redirect_to :action => :index }
+        format.json { render :json => @status }
+		format.xml { render :xml => @status }
+	end
+  end
+
+  def serve
+  	@status = Status.find_by_user_id(current_user.id)
+	respond_to do |format|
+	    format.html { redirect_to :action => :index }
+        format.json { render :json => @status }
+		format.xml { render :xml => @status }
+	end
+  end
+
 	def show
 		@status = Status.find(params[:id])
 		@friend = User.find(params[:user_id])
