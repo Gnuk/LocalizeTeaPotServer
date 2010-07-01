@@ -29,7 +29,6 @@
 </p>
 
 <span class="link edit"><%= link_to 'Edit my profile', edit_user_path %></span><br/><br/> 
-<span class="link add"><%= link_to 'Update my status', new_user_status_path(current_user.id) %></span><br/><br/>
 <span class="link edit">
 <%= if Status.find_last_by_user_id(@user).nil?
 		'<span id="no_status">No status</span>'
@@ -38,5 +37,6 @@
 	end 
 %>
 </span>
+<span class="link add"><%= link_to 'Add new status', new_user_status_path(current_user.id) %></span><br/><br/>
 <!-- <span class="link edit"><%= link_to 'Manage my statuses', user_statuses_path(current_user.id) %></span>-->
 <hr/>
