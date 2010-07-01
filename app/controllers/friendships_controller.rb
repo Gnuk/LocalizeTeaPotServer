@@ -80,7 +80,7 @@ class FriendshipsController < ApplicationController
 	  @friendships.each do |friend|
 		@friendc = User.find(friend.friend_id);
 		@status = Status.find_by_user_id(friend.friend_id)
-	    xml.wtp("lat"=>@status.latitude,"lon"=>@status.longitude) do
+	    xml.wpt("lat"=>@status.latitude,"lon"=>@status.longitude) do
 		  xml.name(@friendc.login)
 		  xml.status(@status.message)
 		end
