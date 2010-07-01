@@ -82,7 +82,8 @@ class FriendshipsController < ApplicationController
 		@status = Status.find_by_user_id(friend.friend_id)
 	    xml.wpt("lat"=>@status.latitude,"lon"=>@status.longitude) do
 		  xml.name(@friendc.login)
-		  xml.status(@status.message)
+		  xml.desc(@status.message)
+		  xml.time(@status.updated_at)
 		end
 	  end
 	end
