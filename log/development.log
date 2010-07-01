@@ -39707,3 +39707,697 @@ Processing StatusesController#createfromput (for 127.0.0.1 at 2010-05-02 20:04:0
   [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
   [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
 Completed in 1326ms (View: 19, DB: 23) | 200 OK [http://localhost/api/localisations/mangeot/?]
+/!\ FAILSAFE /!\  Thu Jul 01 17:20:58 +0200 2010
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/Applications/MAMP/tmp/mysql/mysql.sock' (61)
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Thu Jul 01 17:21:07 +0200 2010
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/Applications/MAMP/tmp/mysql/mysql.sock' (61)
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (30.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 17:21:38) [GET]
+
+ActionController::RoutingError (No route matches "/ltp/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-07-01 17:21:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (179.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/themes
+Rendering user_sessions/new
+Completed in 662ms (View: 155, DB: 181) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-07-01 17:21:49) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"password"=>"[FILTERED]", "login"=>"mangeot", "remember_me"=>"0"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (47.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (2.0ms)[0m   [0;1mUPDATE `users` SET `login_count` = 3, `perishable_token` = 'AtKX252dMdfBJo4ynBA-', `last_login_at` = '2010-05-02 11:03:48', `updated_at` = '2010-07-01 15:21:50', `last_request_at` = '2010-07-01 15:21:50', `current_login_at` = '2010-07-01 15:21:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'mangeot') LIMIT 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 879ms (DB: 57) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-07-01 17:21:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'yaidMtRvAoeQlG5Z_CZk', `updated_at` = '2010-07-01 15:21:50', `last_request_at` = '2010-07-01 15:21:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (36.3ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.6ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;35;1mStatus Load (1.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 1139ms (View: 47, DB: 49) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-07-01 17:21:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"statuses", "user_id"=>"1"}
+  [4;36;1mUser Columns (540.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (28.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'uK3XjtnOYVLcgQ3cdTvL', `updated_at` = '2010-07-01 15:21:59', `last_request_at` = '2010-07-01 15:21:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (28.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (0.8ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (24.6ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (716.2ms)
+Rendered statuses/_status (3.1ms)
+Completed in 1504ms (View: 760, DB: 626) | 200 OK [http://localhost/users/1/statuses]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#index (for 127.0.0.1 at 2010-07-01 17:22:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"friendships", "user_id"=>"1"}
+  [4;35;1mUser Columns (13.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (4.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = '-pQht4uHpS6-zwLFCpsg', `updated_at` = '2010-07-01 15:22:39', `last_request_at` = '2010-07-01 15:22:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (19.8ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (16.4ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;36;1mStatus Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (13.1ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/themes
+Rendering friendships/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered friendships/_friendship (7.9ms)
+Completed in 269ms (View: 47, DB: 84) | 200 OK [http://localhost/users/1/friendships]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 17:25:06) [GET]
+
+ActionController::RoutingError (No route matches "/ltp/api/localisations/mangeot/friendships" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 17:25:22) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (116.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (268.6ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.3ms)[0m   [0mUPDATE `users` SET `perishable_token` = '-MoXs4bYzzKLCHU4XTLh', `updated_at` = '2010-07-01 15:25:22', `last_request_at` = '2010-07-01 15:25:22' WHERE `id` = 1[0m
+  [4;36;1mSQL (23.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (37.6ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (8.4ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (10.9ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (87.9ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+Completed in 725ms (View: 5, DB: 556) | 200 OK [http://localhost/api/localisations/mangeot/friendships]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#createfromput (for 127.0.0.1 at 2010-07-01 17:26:14) [PUT]
+  Parameters: {"<?xml version"=>"\"1.0\"?><<ltp version=\"0.1\" generator=\"GoPens Android client\">\n   <gpx_file \n     lat=\"53.285644054\" lon=\"-6.238367558\" \n     user=\"robfitz\" public=\"true\" pending=\"false\" \n     timestamp=\"2010-01-13T23:28:41 01:00\"/>\n </ltp>", "action"=>"createfromput", "controller"=>"statuses", "login"=>"mangeot"}
+  [4;36;1mUser Columns (14.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.7ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'XqN_AC7cgluK6Gd6UGlG', `updated_at` = '2010-07-01 15:26:14', `last_request_at` = '2010-07-01 15:26:14' WHERE `id` = 1[0m
+  [4;36;1mSQL (145.6ms)[0m   [0;1mCOMMIT[0m
+
+REXML::ParseException (#<REXML::ParseException: malformed XML: missing tag start
+Line: 6
+Position: 237
+Last 80 unconsumed characters:
+<<ltp version="0.1" generator="GoPens Android client">    <gpx_file       lat="53>
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/parsers/baseparser.rb:356:in `pull'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/Projects/geek2010/LocalizeTeaPotServer/trunk/app/controllers/statuses_controller.rb:27:in `new'
+/Projects/geek2010/LocalizeTeaPotServer/trunk/app/controllers/statuses_controller.rb:27:in `createfromput'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+...
+malformed XML: missing tag start
+Line: 6
+Position: 237
+Last 80 unconsumed characters:
+<<ltp version="0.1" generator="GoPens Android client">    <gpx_file       lat="53
+Line: 6
+Position: 237
+Last 80 unconsumed characters:
+<<ltp version="0.1" generator="GoPens Android client">    <gpx_file       lat="53):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/parsers/treeparser.rb:92:in `parse'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/document.rb:227:in `build'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+  app/controllers/statuses_controller.rb:27:in `new'
+  app/controllers/statuses_controller.rb:27:in `createfromput'
+
+Rendered rescues/_trace (371.9ms)
+Rendered rescues/_request_and_response (6.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#createfromput (for 127.0.0.1 at 2010-07-01 17:26:54) [PUT]
+  Parameters: {"<?xml version"=>"\"1.0\"?><ltp version=\"0.1\" generator=\"GoPens Android client\"><gpx_file lat=\"53.285644054\" lon=\"-6.238367558\" user=\"mangeot\" public=\"true\" pending=\"false\" timestamp=\"2010-01-13T23:28:41 01:00\"/></ltp>", "action"=>"createfromput", "controller"=>"statuses", "login"=>"mangeot"}
+  [4;35;1mUser Columns (135.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;35;1mSQL (261.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.3ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'hsqT1hm6mrVFN0WOEGi9', `updated_at` = '2010-07-01 15:26:54', `last_request_at` = '2010-07-01 15:26:54' WHERE `id` = 1[0m
+  [4;35;1mSQL (63.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (157.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (1835.9ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `value' for nil:NilClass):
+  app/controllers/statuses_controller.rb:33:in `createfromput'
+
+Rendered rescues/_trace (157.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-07-01 17:27:25) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (63.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = 't7uHemcdtNLR-VbY3kVo', `updated_at` = '2010-07-01 15:27:26', `last_request_at` = '2010-07-01 15:27:26' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (2.2ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (1.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 1505ms (View: 35, DB: 75) | 200 OK [http://localhost/users/1/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-07-01 17:28:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.7ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'R2mkxWKEJJBAnozKflkb', `updated_at` = '2010-07-01 15:28:50', `last_request_at` = '2010-07-01 15:28:50' WHERE `id` = 1[0m
+  [4;36;1mSQL (84.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (140.3ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (72.5ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+Rendering template within layouts/themes
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) ORDER BY statuses.id DESC LIMIT 1[0m
+  [4;36;1mStatus Load (1.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+Completed in 1817ms (View: 65, DB: 308) | 200 OK [http://localhost/users/1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#createfromput (for 127.0.0.1 at 2010-07-01 17:29:17) [PUT]
+  Parameters: {"<?xml version"=>"\"1.0\"?><ltp version=\"0.1\" generator=\"GoPens Android client\"><gpx_file lat=\"53.285644054\" lon=\"-6.238367558\" user=\"mangeot\" public=\"true\" pending=\"false\" timestamp=\"2010-01-13T23:28:41 01:00\"/></ltp>", "action"=>"createfromput", "controller"=>"statuses", "login"=>"mangeot"}
+  [4;35;1mUser Columns (19.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'vMS9D7gClTO2min_LJNm', `updated_at` = '2010-07-01 15:29:18', `last_request_at` = '2010-07-01 15:29:18' WHERE `id` = 1[0m
+  [4;35;1mSQL (72.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (53.2ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (136.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `value' for nil:NilClass):
+  app/controllers/statuses_controller.rb:33:in `createfromput'
+
+Rendered rescues/_trace (110.2ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-07-01 17:51:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"statuses", "user_id"=>"1"}
+  [4;36;1mUser Columns (7.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.5ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'uwTAqAb4CUF36BuBJbeC', `updated_at` = '2010-07-01 15:51:17', `last_request_at` = '2010-07-01 15:51:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Load (1.9ms)[0m   [0mSELECT * FROM `statuses` [0m
+Rendering template within layouts/themes
+Rendering statuses/index
+  [4;36;1mStatus Columns (4.9ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+Rendered statuses/_status (22.2ms)
+Rendered statuses/_status (3.7ms)
+Completed in 258ms (View: 81, DB: 23) | 200 OK [http://localhost/users/1/statuses]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:28:31) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (101.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.4ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'ge6Xecq20A90LhlZF1QI', `updated_at` = '2010-07-01 16:28:33', `last_request_at` = '2010-07-01 16:28:33' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (2.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template friendships/servestatuses.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:30:15) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'hcZtt--xLF3hJW41wUX4', `updated_at` = '2010-07-01 16:30:16', `last_request_at` = '2010-07-01 16:30:16' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (2.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.1ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+Completed in 858ms (View: 5, DB: 19) | 200 OK [http://localhost/api/localisations/mangeot/friendships]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#createfromput (for 127.0.0.1 at 2010-07-01 18:34:55) [PUT]
+  Parameters: {"<?xml version"=>"\"1.0\"?><ltp version=\"0.1\" generator=\"GoPens Android client\"><gpx_file lat=\"53.285644054\" lon=\"-6.238367558\" user=\"mangeot\" public=\"true\" pending=\"false\" timestamp=\"2010-01-13T23:28:41 01:00\"/></ltp>", "action"=>"createfromput", "controller"=>"statuses", "login"=>"mangeot"}
+  [4;36;1mUser Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.8ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'Gmgu8LEb04cUZRGsw2NW', `updated_at` = '2010-07-01 16:34:55', `last_request_at` = '2010-07-01 16:34:55' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStatus Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (2.3ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `value' for nil:NilClass):
+  app/controllers/statuses_controller.rb:33:in `createfromput'
+
+Rendered rescues/_trace (84.4ms)
+Rendered rescues/_request_and_response (4.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StatusesController#createfromput (for 127.0.0.1 at 2010-07-01 18:35:07) [PUT]
+  Parameters: {"<?xml version"=>"\"1.0\"?><ltp version=\"0.1\" generator=\"GoPens Android client\"><gpx_file lat=\"53.285644054\" lon=\"-6.238367558\" user=\"mangeot\" public=\"true\" pending=\"false\" timestamp=\"2010-01-13T23:28:41 01:00\">toto</gpx_file></ltp>", "action"=>"createfromput", "controller"=>"statuses", "login"=>"mangeot"}
+  [4;35;1mUser Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'jrqb-2oES5Vc8UGp8ucu', `updated_at` = '2010-07-01 16:35:07', `last_request_at` = '2010-07-01 16:35:07' WHERE `id` = 1[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStatus Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (1.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStatus Update (1.4ms)[0m   [0mUPDATE `statuses` SET `latitude` = 53.285644054, `message` = 'toto', `longitude` = -6.238367558, `updated_at` = '2010-07-01 16:35:07' WHERE `id` = 2[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+
+ActionController::RoutingError (No route matches {:action=>"index"}):
+  app/controllers/statuses_controller.rb:39:in `createfromput'
+  app/controllers/statuses_controller.rb:38:in `createfromput'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:36:48) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;35;1mUser Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'guhyrNkc1pOdz4g-Vulb', `updated_at` = '2010-07-01 16:36:48', `last_request_at` = '2010-07-01 16:36:48' WHERE `id` = 1[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFriendship Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `friendships`[0m
+  [4;35;1mFriendship Load (2.0ms)[0m   [0mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mStatus Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `statuses`[0m
+  [4;36;1mStatus Load (2.1ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+Completed in 367ms (View: 3, DB: 21) | 200 OK [http://localhost/api/localisations/mangeot/friendships]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:45:40) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.1ms)[0m   [0mUPDATE `users` SET `perishable_token` = '-PrFLIk4w0FaUXTuWvOA', `updated_at` = '2010-07-01 16:45:41', `last_request_at` = '2010-07-01 16:45:41' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (1.9ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (1.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+
+NoMethodError (undefined method `output' for #<FriendshipsController:0x23be320>):
+  app/controllers/friendships_controller.rb:92:in `servestatuses'
+  app/controllers/friendships_controller.rb:91:in `servestatuses'
+
+Rendered rescues/_trace (277.0ms)
+Rendered rescues/_request_and_response (4.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:50:52) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'gR7hTDhljABg8QSoXqnK', `updated_at` = '2010-07-01 16:50:53', `last_request_at` = '2010-07-01 16:50:53' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (2.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (13.7ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (1.4ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template friendships/servestatuses.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:52:46) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.1ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'tOzdUti-VSzmouvKUL7e', `updated_at` = '2010-07-01 16:52:47', `last_request_at` = '2010-07-01 16:52:47' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (2.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+Rendering template within <?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="LocalizeTeaPot server" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lon="5.7" lat="45.6439">
+    <name>mathieu</name>
+    <desc>statut de mat</desc>
+    <time>2010-05-02 13:33:33 +0200</time>
+  </wpt>
+</gpx>
+<respond_to?:render/>
+<path_without_format_and_extension/>
+<path_without_format_and_extension/>
+
+ActionView::MissingTemplate (Missing template friendships/servestatuses.erb in view path app/views):
+  app/controllers/friendships_controller.rb:92:in `servestatuses'
+  app/controllers/friendships_controller.rb:91:in `servestatuses'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:53:37) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'ZD4bPYCRWD38WeUXopwb', `updated_at` = '2010-07-01 16:53:38', `last_request_at` = '2010-07-01 16:53:38' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (2.0ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.1ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template friendships/servestatuses.erb in view path app/views):
+  app/controllers/friendships_controller.rb:92:in `servestatuses'
+  app/controllers/friendships_controller.rb:91:in `servestatuses'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 18:57:33) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'dw3yURCyOKDtBxFkEODI', `updated_at` = '2010-07-01 16:57:33', `last_request_at` = '2010-07-01 16:57:33' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (2.2ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.0ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Completed in 805ms (View: 4, DB: 21) | 200 OK [http://localhost/api/localisations/mangeot/friendships]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 19:05:11) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = '97Bs4nYaHEgXhhHkzQkU', `updated_at` = '2010-07-01 17:05:12', `last_request_at` = '2010-07-01 17:05:12' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (1.9ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.1ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+
+NoMethodError (undefined method `each' for :friendships:Symbol):
+  app/models/user.rb:39:in `to_friendships_xml'
+  app/models/user.rb:33:in `to_friendships_xml'
+  app/controllers/friendships_controller.rb:92:in `servestatuses'
+  app/controllers/friendships_controller.rb:91:in `servestatuses'
+
+Rendered rescues/_trace (303.9ms)
+Rendered rescues/_request_and_response (4.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FriendshipsController#servestatuses (for 127.0.0.1 at 2010-07-01 19:07:12) [GET]
+  Parameters: {"action"=>"servestatuses", "controller"=>"friendships", "login"=>"mangeot"}
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mangeot') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'k8F2keGk2rtNRpWFE3Zt', `updated_at` = '2010-07-01 17:07:13', `last_request_at` = '2010-07-01 17:07:13' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mFriendship Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `friendships`[0m
+  [4;36;1mFriendship Load (1.9ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.`user_id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mStatus Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `statuses`[0m
+  [4;35;1mStatus Load (2.3ms)[0m   [0mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+  [4;36;1mFriendship Load (0.9ms)[0m   [0;1mSELECT * FROM `friendships` WHERE (`friendships`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `statuses` WHERE (`statuses`.`user_id` = 2) LIMIT 1[0m
+Completed in 823ms (View: 5, DB: 21) | 200 OK [http://localhost/api/localisations/mangeot/friendships]

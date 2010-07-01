@@ -36,7 +36,7 @@
 		link_to 'Edit my status', edit_user_status_path(current_user.id, Status.find_by_user_id(current_user.id)) 
 	end 
 %>
-</span>
+</span><br/><br/> 
 <span class="link add"><%= link_to 'Add new status', new_user_status_path(current_user.id) %></span><br/><br/>
 <!-- <span class="link edit"><%= link_to 'Manage my statuses', user_statuses_path(current_user.id) %></span>-->
 <hr/>
