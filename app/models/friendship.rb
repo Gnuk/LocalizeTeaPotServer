@@ -6,14 +6,6 @@ class Friendship < ActiveRecord::Base
   attr_accessor :friend_login
   attr_accessor :status
   
-  def to_xmlh(options ={})
-	proc = Proc.new { |options| options[:builder].tag!('ghi', 'jkl') }
-	options[:only] = [ :id, :user_id, :friend_id, :see_position]
-	options[:procs] = [ proc]
-	#options[:include] = [ :friend_id]
-    super(options)
-  end
-
     def to_xml(options = {})
       options[:indent] ||= 2
       xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])

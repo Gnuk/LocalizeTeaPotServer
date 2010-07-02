@@ -9,6 +9,12 @@
 <p class="status_message">&laquo;<%= @status.message %>&raquo;</p>
  
 <p>
+  <b>Position:</b>
+   <%=h @status.latitude %>° of latitude, <%=h @status.longitude %>° of longitude<br/>
+ Updated <%= time_ago_in_words(@status.updated_at) %></span> ago<br /> 
+</p>
+
+<p>
   <b>Login count:</b>
   <%=h @user.login_count %>
 </p>

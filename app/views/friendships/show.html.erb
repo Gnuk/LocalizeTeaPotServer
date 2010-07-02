@@ -16,7 +16,7 @@
 <br />
 <span>Current status message: <%= @last_status.message %></span>
 <br />
-<span>Last position: <%= @last_status.latitude %>; <%= @last_status.longitude %></span>
+<span>Last position: latitude: <%= @last_status.latitude %>; longitude: <%= @last_status.longitude %>, updated <%= time_ago_in_words(@last_status.updated_at) %></span> ago</span>
 <br />
 <span>Gender: <%= gender %></span>
 <br />

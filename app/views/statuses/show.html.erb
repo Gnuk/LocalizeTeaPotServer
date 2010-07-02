@@ -3,10 +3,9 @@
 <% @imgTitle = "status.png" %>
 
 
-<h3><%= @friend.login %></h3>
+<h3><%= @friend.login %> said:</h3>
 <h4><%= @status.message %></h4>
-<br />
 <span>Position: <%= @status.latitude %>; <%= @status.longitude %></span>
 <br />
-<span><%= time_ago_in_words(@status.created_at) %></span> ago.<br /><br />
+<span>Updated <%= time_ago_in_words(@status.updated_at) %></span> ago<br /><br />
 <span class="link del"><%= link_to 'Remove status', user_status_path, :method => :delete, :confirm => "Are you sure ?" %></span>
