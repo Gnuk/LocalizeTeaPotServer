@@ -42,6 +42,7 @@ Rails::Initializer.run do |config|
   config.gem "searchlogic"
   config.gem "calendar_date_select" 
   config.gem "geokit"
+ # config.gem "yajl-ruby"
  
 end
 
