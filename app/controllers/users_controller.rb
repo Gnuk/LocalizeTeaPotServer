@@ -24,6 +24,7 @@ class UsersController < ApplicationController
 	  	@status.message = "This user never published a status"
 	  	@status.latitude = 45.6439
 	  	@status.longitude = 5.86805
+	  	@status.updated_at = "now"
 	end
     
     #Google map
