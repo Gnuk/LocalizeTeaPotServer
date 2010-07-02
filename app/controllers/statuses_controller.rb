@@ -1,4 +1,4 @@
-require 'json'
+#require 'json'
 # sudo gem sources -a http://gemcutter.org
 # sudo gem install yajl-ruby
 require 'yajl'
