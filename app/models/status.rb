@@ -13,6 +13,8 @@ class Status < ActiveRecord::Base
       options[:indent] ||= 2
       xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
       xml.instruct! unless options[:skip_instruct]
+	  print "statusid:"
+	  print self.id
 	  print "userid:"
 	  print self.user_id
 	  @user = User.find(self.user_id);
