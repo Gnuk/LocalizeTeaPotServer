@@ -9,15 +9,11 @@ class Status < ActiveRecord::Base
  #    timestamp="2010-01-13T23:28:41+01:00"/>
  #</ltp>
 
-    def to_xml(options = {})
+    def to_gpxfile(options = {})
       options[:indent] ||= 2
       xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
       xml.instruct! unless options[:skip_instruct]
-	  print "statusid:"
-	  print self.id
-	  print "userid:"
-	  print self.user_id
-	  @user = User.find(self.user_id);
+	  @user = User.find(user_id);
 	  xml.ltp("version"=>"0.1","generator"=>"LTP server") do
 	    xml.gpx_file(message,"lat"=>latitude,"lon"=>longitude, "user"=>@user.login, "timestamp"=>updated_at)
       end
