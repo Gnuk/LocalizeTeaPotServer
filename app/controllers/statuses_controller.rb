@@ -80,12 +80,12 @@ class StatusesController < ApplicationController
   end
 
   def serve
-  	@status = Status.find_by_user_id(current_user.id)
-	respond_to do |format|
-	    format.html { redirect_to :action => :index }
+    @status = Status.find_by_user_id(current_user.id)
+    respond_to do |format|
+        format.html { redirect_to :action => :index }
         format.json { render :json => @status }
-		format.xml { render :xml => @status }
-	end
+        format.xml { render :xml => @status }
+    end
   end
 
 	def show
