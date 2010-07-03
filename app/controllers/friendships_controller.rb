@@ -56,9 +56,9 @@ class FriendshipsController < ApplicationController
 
   def servestatuses
 	respond_to do |format|
-	  format.html { redirect_to :action => :index }
-	  format.json { render :json => current_user.to_friendships_json}
-	  format.xml { render :xml => current_user.to_friendships_xml}
+	  format.html { render :xml => current_user.to_friendships_xml }
+	  format.json { render :json => current_user.to_friendships_json }
+	  format.xml { render :xml => current_user.to_friendships_xml }
 	  format.all { redirect_to :action => :index }
 	end
   end

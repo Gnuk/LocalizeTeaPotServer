@@ -43,7 +43,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'api/users/:login.:format', :controller => :users, :action => 'serve', :conditions => { :method => :get }
   map.connect 'api/users/:login/friendships/.:format', :controller => :friendships, :action => 'serve'
   map.connect 'api/localisations/:login/.:format', :controller => :statuses, :action => 'serve', :conditions => { :method => :get }
-  map.connect 'api/localisations/:login/.', :controller => :statuses, :action => 'createfromput', :conditions => { :method => :put }
+  map.connect 'api/localisations/:login/.:format', :controller => :statuses, :action => 'createfromput', :conditions => { :method => :put }
   map.connect 'api/localisations/:login/friendships/.:format', :controller => :friendships, :action => 'servestatuses'
     
   map.root :controller => :user_sessions, :action => :new
