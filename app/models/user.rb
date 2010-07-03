@@ -43,9 +43,54 @@ class User < ActiveRecord::Base
 	    xml.wpt("lat"=>@status.latitude,"lon"=>@status.longitude) do
 		  xml.name(@friendc.login)
 		  xml.desc(@status.message)
-		  xml.time(@status.updated_at)
+		  xml.time(@status.updated_at.iso8601)
 		end
 	  end
 	end
   end
+  
+#  {"gpx":
+#  {"@version":"1.1",
+#    "@creator":"LocalizeTeaPot server",
+#    "wpt":
+#   [
+#    {"@lat":"52.2015094",
+#      "@lon":"5.13285130000001",
+#      "name":"Caroline"
+#    },
+#    {"@lat":"52.2069108",
+#      "@lon":"5.11004300000001",
+#      "name":"Claire"
+#    },
+#    {"@lat":"52.1531526",
+#      "@lon":"5.02283559999999",
+#      "name":"Alexis"
+#    }
+#   ]
+#  }
+#}
+
+  def to_friendships_json (options = {})
+    json = options[:builder] ||= Hash.new
+	gpx = Hash.new
+	gpx[:@version] = "1.1"
+	gpx[:@creator] = "LocalizeTeaPot server"
+	wptarray = []
+	friendships.each do |friend|
+		@friendc = User.find(friend.friend_id);
+		@status = Status.find_by_user_id(friend.friend_id)
+		wpt = Hash.new
+		wpt[:@lat] = @status.latitude
+		wpt[:@lon] = @status.longitude
+		wpt[:name] = @friendc.login
+		wpt[:desc] = @status.message
+		wpt[:time] = @status.updated_at
+		wptarray.push(wpt)
+	end
+	gpx[:wpt] = wptarray
+	json[:gpx] = gpx
+    json.to_json
+  end
+
+  
 end
