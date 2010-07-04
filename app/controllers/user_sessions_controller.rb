@@ -8,15 +8,13 @@ class UserSessionsController < ApplicationController
   
   def create
     @user_session = UserSession.new(params[:user_session])
-	print "ip:"
-	print request.env["HTTP_X_FORWARDED_FOR"]
     if @user_session.save
-      flash[:notice] = "Login successful!"
 	  @user = User.find_by_login(@user_session.login)
 	  if defined? request.env["HTTP_X_FORWARDED_FOR"] then
 		@user.current_login_ip = request.env["HTTP_X_FORWARDED_FOR"]
 		@user.save
 	  end
+      flash[:notice] = "Login successful!"
       redirect_back_or_default user_url(@user.id)
     else
       render :action => :new
