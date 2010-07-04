@@ -1,3 +1,4 @@
+include ActionView::Helpers::DateHelper
 class FriendshipsController < ApplicationController
   before_filter :require_user
 
