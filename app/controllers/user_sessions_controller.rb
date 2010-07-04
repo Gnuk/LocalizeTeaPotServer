@@ -8,6 +8,11 @@ class UserSessionsController < ApplicationController
   
   def create
     @user_session = UserSession.new(params[:user_session])
+	print "ip:"
+	print request.env["X_FORWARDED_FOR"]
+	if defined? request.env["X_FORWARDED_FOR"] then
+		@user_session.current_login_ip = request.env["X_FORWARDED_FOR"]
+	end
     if @user_session.save
       flash[:notice] = "Login successful!"
 	  
