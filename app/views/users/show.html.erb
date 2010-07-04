@@ -34,6 +34,15 @@
   <%=h @user.current_login_ip %>
 </p>
 
+<table border="1">
+<caption>HTTP headers</caption>
+<% for header in request.env.select {|k,v| k.match("^HTTP.*")} %>
+  <tr>
+    <td><%=header[0].split('_',2)[1]%></td><td><%=header[1]%></td>    
+  </tr>
+<% end %>
+</table>
+
 <span class="link edit"><%= link_to 'Edit my profile', edit_user_path %></span><br/><br/> 
 <span class="link edit">
 <%= if Status.find_last_by_user_id(@user).nil?

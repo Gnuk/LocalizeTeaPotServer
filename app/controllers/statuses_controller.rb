@@ -69,7 +69,7 @@ class StatusesController < ApplicationController
 	if @status then
 		@status.update_attributes(:message => message_text, :latitude => latitude, :longitude => longitude)
 	else
-		@status = Status.new(:message => message_text, :latitude => latitude, :longitude => longitude)
+		@status = Status.new(:user_id =>current_user.id, :message => message_text, :latitude => latitude, :longitude => longitude)
 	end
 	@status.save
 	respond_to do |format|
