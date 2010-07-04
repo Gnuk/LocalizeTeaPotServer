@@ -84,7 +84,7 @@ class FriendshipsController < ApplicationController
 	    @map.enableScrollWhellZoom(true);
 	    login = User.find(@friendship.friend_id).login
 	    @map.center_zoom_init([@last_status.latitude, @last_status.longitude],10)
-	    @map.overlay_init(GMarker.new([@last_status.latitude, @last_status.longitude], :title => @last_status.message, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+@last_status.message+'&raquo;</em>'))
+	    @map.overlay_init(GMarker.new([@last_status.latitude, @last_status.longitude], :title => @last_status.message, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+@last_status.message+'&raquo;</em><br/><span style="color:gray;">updated at '+@last_status.updated_at+'</span>))
 
 	  	respond_to do |format|
 	  		format.html
