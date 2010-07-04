@@ -17,7 +17,7 @@ class FriendshipsController < ApplicationController
 		if friend.status
 			@map.center_zoom_init([friend.status.latitude, friend.status.longitude],10)
 			login = User.find(friend.friend_id).login
-			@map.overlay_init(GMarker.new([friend.status.latitude, friend.status.longitude], :title => login, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+friend.status.message+'&raquo;</em>'))
+			@map.overlay_init(GMarker.new([friend.status.latitude, friend.status.longitude], :title => login, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+friend.status.message+'&raquo;</em><br/><span style="color:gray;">updated '+time_ago_in_words(@last_status.updated_at)+' ago</span>'))
 		end
 	end
   	
@@ -85,7 +85,7 @@ class FriendshipsController < ApplicationController
 	    @map.enableScrollWhellZoom(true);
 	    login = User.find(@friendship.friend_id).login
 	    @map.center_zoom_init([@last_status.latitude, @last_status.longitude],10)
-	    @map.overlay_init(GMarker.new([@last_status.latitude, @last_status.longitude], :title => @last_status.message, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+@last_status.message+'&raquo;</em><br/><span style="color:gray;">updated '+time_ago_in_words(@last_status.updated_at)+'</span>'))
+	    @map.overlay_init(GMarker.new([@last_status.latitude, @last_status.longitude], :title => @last_status.message, :info_window => '<h1>'+login+'</h1><em class="status_message_info">&laquo;'+@last_status.message+'&raquo;</em><br/><span style="color:gray;">updated '+time_ago_in_words(@last_status.updated_at)+' ago</span>'))
 
 	  	respond_to do |format|
 	  		format.html
